@@ -1,0 +1,30 @@
+{
+  "name": "HTH",
+  "legalName": "HTH (Hub to Hub)",
+  "longName": "Hub to Hub",
+  "positioning": "One system for every part of your business.",
+  "description": "HTH (Hub to Hub) is a digital growth and automation agency. We connect your website, CRM, ads, chat, calls and store into one system that answers every lead in seconds and follows up until it becomes a sale.",
+  "shortDescription": "CRM, AI agents, websites and growth, connected into one system.",
+  "email": "hubtohub12@gmail.com",
+  "whatsapp": {
+    "number": "",
+    "placeholder": "[PLACEHOLDER: WhatsApp number, digits only with country code, e.g. 923001234567]",
+    "message": "Hi HTH, I'd like to talk about a project."
+  },
+  "regions": ["Pakistan", "United States", "United Kingdom", "Gulf (UAE, Saudi Arabia, Qatar)"],
+  "socials": [
+    { "label": "LinkedIn", "href": "[PLACEHOLDER: LinkedIn URL]" },
+    { "label": "Instagram", "href": "[PLACEHOLDER: Instagram URL]" },
+    { "label": "Facebook", "href": "[PLACEHOLDER: Facebook URL]" },
+    { "label": "YouTube", "href": "[PLACEHOLDER: YouTube URL]" }
+  ],
+  "nav": [
+    { "label": "Services", "href": "/services" },
+    { "label": "Work", "href": "/work" },
+    { "label": "Pricing", "href": "/pricing" },
+    { "label": "About", "href": "/about" },
+    { "label": "Insights", "href": "/insights" }
+  ],
+  "primaryCta": { "label": "Book a call", "href": "/contact#book" },
+  "footerNote": "Built and run remotely for clients in Pakistan, the US, the UK and the Gulf."
+}

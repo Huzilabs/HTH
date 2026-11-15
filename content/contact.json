@@ -1,0 +1,40 @@
+{
+  "seo": {
+    "title": "Contact and book a call | HTH (Hub to Hub)",
+    "description": "Book a 30-minute call with HTH, send a project brief, or message us on WhatsApp. Email hubtohub12@gmail.com."
+  },
+  "hero": {
+    "eyebrow": "Contact",
+    "heading": "Tell us what you have. We'll show you what's missing.",
+    "body": "Book a call directly, or send a short brief and we'll reply within [PLACEHOLDER: response time, e.g. one business day] with next steps."
+  },
+  "form": {
+    "heading": "Send a brief",
+    "budgets": [
+      "Under $1,000",
+      "$1,000 to $3,000",
+      "$3,000 to $7,500",
+      "$7,500 to $15,000",
+      "$15,000+",
+      "Not sure yet"
+    ],
+    "success": {
+      "heading": "Thanks, we've got it.",
+      "body": "Your brief is in. We'll reply by email or WhatsApp within [PLACEHOLDER: response time]. If it's urgent, book a call below."
+    },
+    "error": {
+      "heading": "That didn't send.",
+      "body": "Something went wrong on our side. Please try again, or email us directly at"
+    }
+  },
+  "booking": {
+    "heading": "Book a call",
+    "body": "30 minutes. We look at how leads reach you today and where they go cold.",
+    "fallback": "[PLACEHOLDER: Booking calendar appears here once GHL_CALENDAR_EMBED_URL is set]"
+  },
+  "whatsapp": {
+    "heading": "Prefer WhatsApp?",
+    "body": "Message us directly. Same team, same response time.",
+    "cta": "Chat on WhatsApp"
+  }
+}

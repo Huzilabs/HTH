@@ -1,0 +1,86 @@
+{
+  "slug": "workflow-automation",
+  "hub": "crm-automation",
+  "order": 2,
+  "name": "Workflow automation",
+  "summary": "n8n, Make and Zapier workflows that move data between your tools so your team stops copying and pasting.",
+  "answer": "Workflow automation means connecting the apps your business already uses so data moves between them on its own. HTH builds automations in n8n, Make and Zapier, backed by Airtable or Supabase where you need a proper database. It's for teams who spend hours a week copying information between forms, CRMs, spreadsheets, invoicing and chat.",
+  "whoFor": [
+    "Teams re-typing the same data into three different tools",
+    "Operations that depend on one person remembering to do things",
+    "Businesses with a Zapier bill that keeps growing and breaking",
+    "Agencies that need reliable automations they can resell"
+  ],
+  "problem": {
+    "heading": "Your tools work. They just don't talk to each other.",
+    "body": "A form submission becomes an email, which someone copies into a spreadsheet, which someone else copies into the CRM, then the invoicing tool. Every hand-off is a delay and a chance for a mistake, and when the person who set it up leaves, nobody knows how it works."
+  },
+  "deliverables": [
+    {
+      "title": "Process map",
+      "detail": "A diagram of what happens today and what will happen automatically, agreed before we build."
+    },
+    {
+      "title": "Automations",
+      "detail": "Workflows in n8n, Make or Zapier, built with error handling and alerts when something fails."
+    },
+    {
+      "title": "Data layer",
+      "detail": "Airtable or Supabase tables where a spreadsheet is no longer enough."
+    },
+    {
+      "title": "Integrations",
+      "detail": "API connections to tools without a ready-made connector, including webhooks and custom endpoints."
+    },
+    {
+      "title": "Documentation",
+      "detail": "Every workflow named, commented and documented so your team or ours can maintain it."
+    }
+  ],
+  "tools": [
+    "n8n",
+    "Make",
+    "Zapier",
+    "Airtable",
+    "Supabase",
+    "Webhooks and REST APIs"
+  ],
+  "process": [
+    {
+      "title": "Map",
+      "detail": "We list the repetitive tasks, how often they happen and what they cost in time."
+    },
+    {
+      "title": "Prioritise",
+      "detail": "We start with the automations that save the most hours or remove the most risk."
+    },
+    {
+      "title": "Build and test",
+      "detail": "Each workflow is built, tested with real data and monitored for a week before sign-off."
+    },
+    {
+      "title": "Document",
+      "detail": "You get a written register of every automation, what triggers it and who to call."
+    }
+  ],
+  "timeline": "1 to 2 weeks for a first set of automations, then ongoing as needed.",
+  "priceFrom": "[PLACEHOLDER: starting price for workflow automation]",
+  "faqs": [
+    {
+      "question": "n8n, Make or Zapier: which is best?",
+      "answer": "Zapier is quickest for simple two-step automations. Make handles more complex logic at lower cost. n8n can be self-hosted, which is cheapest at volume and keeps data on your own server. We pick per workflow."
+    },
+    {
+      "question": "What happens when an automation breaks?",
+      "answer": "Every workflow we build has error alerts. On a monthly plan we fix failures, usually the same day."
+    },
+    {
+      "question": "Can you take over automations someone else built?",
+      "answer": "Yes. We audit them first, document what exists and fix or rebuild the fragile ones."
+    }
+  ],
+  "seo": {
+    "title": "Workflow automation | HTH (Hub to Hub)",
+    "description": "n8n, Make and Zapier workflows that move data between your tools so your team stops copying and pasting."
+  }
+}

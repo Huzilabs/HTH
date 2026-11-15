@@ -1,9 +1,9 @@
+import createMDX from "@next/mdx";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  pageExtensions: ["ts", "tsx", "md", "mdx"],
+  poweredByHeader: false,
   turbopack: {
     rules: {
       "*.css": {
@@ -12,6 +12,12 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  // Content and OG fonts are read from disk at build/render time.
+  outputFileTracingIncludes: {
+    "/**/*": ["./content/**/*", "./assets/fonts/**/*"],
+  },
 };
 
-export default nextConfig;
+const withMDX = createMDX({});
+
+export default withMDX(nextConfig);

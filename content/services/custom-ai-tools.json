@@ -1,0 +1,86 @@
+{
+  "slug": "custom-ai-tools",
+  "hub": "ai",
+  "order": 3,
+  "name": "Custom AI tools and integrations",
+  "summary": "OpenAI-powered tools built into your workflows: document processing, internal assistants, content and data tasks.",
+  "answer": "Custom AI tools are small, focused applications that use models like OpenAI's GPT to do a specific job inside your business, such as reading documents, drafting replies, summarising calls or sorting leads. HTH designs and builds these tools and connects them to your CRM, inbox and databases. They're for teams with a repetitive, text-heavy task that an off-the-shelf app doesn't quite fit.",
+  "whoFor": [
+    "Teams processing documents, forms or emails by hand",
+    "Sales teams that want call summaries and next steps in the CRM",
+    "Agencies building AI features into their own products",
+    "Businesses that want an internal assistant trained on their own documents"
+  ],
+  "problem": {
+    "heading": "AI could do the job, but generic chat apps don't fit your workflow.",
+    "body": "Your team copies text into ChatGPT, copies the answer back, and fixes the formatting. It works, but it's manual, inconsistent and nothing is saved where it needs to be."
+  },
+  "deliverables": [
+    {
+      "title": "Use-case scoping",
+      "detail": "We define the task, the inputs, the expected output and how we'll judge it's working."
+    },
+    {
+      "title": "Prompt and model design",
+      "detail": "Prompts, structured outputs and model choice tuned for accuracy and cost."
+    },
+    {
+      "title": "Integration",
+      "detail": "The tool runs inside your existing systems: CRM, inbox, forms, Airtable, Supabase or your app."
+    },
+    {
+      "title": "Simple interface",
+      "detail": "Where needed, a small web interface built in Next.js for your team to use."
+    },
+    {
+      "title": "Evaluation",
+      "detail": "A test set of real examples so quality is measured, not guessed."
+    }
+  ],
+  "tools": [
+    "OpenAI API",
+    "Next.js",
+    "Supabase",
+    "n8n",
+    "Make",
+    "Vercel"
+  ],
+  "process": [
+    {
+      "title": "Define",
+      "detail": "We pick one task, gather real examples and agree what a good result looks like."
+    },
+    {
+      "title": "Prototype",
+      "detail": "A working prototype in days, tested on your examples."
+    },
+    {
+      "title": "Build",
+      "detail": "We harden it, connect it to your systems and add logging and error handling."
+    },
+    {
+      "title": "Measure",
+      "detail": "We check accuracy and cost against the test set and keep improving."
+    }
+  ],
+  "timeline": "A prototype in 1 week, production in 2 to 6 weeks depending on scope.",
+  "priceFrom": "[PLACEHOLDER: starting price for custom AI tools]",
+  "faqs": [
+    {
+      "question": "Is our data used to train the AI?",
+      "answer": "Data sent through the OpenAI API is not used to train their models by default. We also minimise what's sent and can keep sensitive data on your own systems."
+    },
+    {
+      "question": "Do you only use OpenAI?",
+      "answer": "OpenAI is our default, but we choose the model per task and can use others where they're a better fit for cost, speed or data rules."
+    },
+    {
+      "question": "Who owns the tool?",
+      "answer": "You do. It's built in your accounts and you get the code and documentation."
+    }
+  ],
+  "seo": {
+    "title": "Custom AI tools and integrations | HTH (Hub to Hub)",
+    "description": "OpenAI-powered tools built into your workflows: document processing, internal assistants, content and data tasks."
+  }
+}

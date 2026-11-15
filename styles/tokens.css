@@ -1,0 +1,80 @@
+/*
+ * HTH design tokens: Direction B "Network".
+ * One ground, one ink, one accent. Every other colour is a fixed mix of those three.
+ * Tailwind's default palette, fonts and radii are reset, so components can only use these.
+ *
+ * Contrast (WCAG 2.x) on --color-ground:
+ *   ink 15.3:1 · muted 9.6:1 · subtle 7.1:1 · accent 9.6:1 · line-strong 3.4:1 (UI boundaries)
+ *   ground text on accent 9.6:1
+ */
+
+@theme {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  /* Core three */
+  --color-ground: #0f1315; /* Graphite */
+  --color-ink: #e6eae3; /* Chalk */
+  --color-accent: #e3b34a; /* Signal amber */
+
+  /* Derived (fixed mixes of ink over ground) */
+  --color-muted: #b7bbb6; /* ink 78%: secondary text */
+  --color-subtle: #9da19d; /* ink 66%: labels, captions */
+  --color-line-strong: #696d6c; /* ink 42%: input borders, focusable boundaries */
+  --color-line: #313536; /* ink 16%: hairlines, card borders */
+  --color-raised: #1a1e1f; /* ink 5%: raised surfaces, placeholders */
+
+  /* Radii */
+  --radius-*: initial;
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-full: 9999px;
+
+  /* Type scale (fluid where it matters) */
+  --text-*: initial;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.4;
+  --text-label--letter-spacing: 0.06em;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1rem;
+  --text-base--line-height: 1.65;
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.6;
+  --text-h4: 1.25rem;
+  --text-h4--line-height: 1.25;
+  --text-h3: clamp(1.5rem, 1.2rem + 1vw, 1.875rem);
+  --text-h3--line-height: 1.1;
+  --text-h2: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+  --text-h2--line-height: 1.02;
+  --text-h1: clamp(2.5rem, 1.6rem + 4.4vw, 5rem);
+  --text-h1--line-height: 0.98;
+  --text-stat: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
+  --text-stat--line-height: 1;
+
+  /* Tracking */
+  --tracking-display: -0.03em;
+  --tracking-tight: -0.015em;
+  --tracking-label: 0.06em;
+
+  /* Layout */
+  --container-page: 76rem;
+  --container-prose: 42rem;
+
+  /* Motion */
+  --ease-route: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@theme inline {
+  --font-*: initial;
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: dark;
+  --focus-ring: var(--color-accent);
+  --display-stretch: 86%;
+}

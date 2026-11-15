@@ -1,0 +1,90 @@
+{
+  "slug": "ai-voice-agents",
+  "hub": "ai",
+  "order": 1,
+  "name": "AI voice agents",
+  "summary": "Voice agents that answer inbound calls, make outbound calls and book appointments into your calendar.",
+  "answer": "An AI voice agent is software that answers and makes phone calls in natural speech, then takes actions like booking an appointment or updating your CRM. HTH builds voice agents on Retell, Vapi and GoHighLevel Voice AI for inbound reception, outbound lead calls and appointment booking. They're for businesses that miss calls, can't call new leads fast enough, or want 24/7 cover without a night shift.",
+  "whoFor": [
+    "Clinics, medspas and law firms with busy front desks",
+    "Real estate teams that need to call portal leads in minutes",
+    "Local services that miss calls after hours",
+    "Agencies adding voice AI to their client offer"
+  ],
+  "problem": {
+    "heading": "Calls go unanswered, and new leads wait hours for a callback.",
+    "body": "Reception is busy, on lunch or closed. Outbound callbacks happen when someone has time. Every missed call and slow callback is a customer who rings the next business on the list."
+  },
+  "deliverables": [
+    {
+      "title": "Call design",
+      "detail": "Scripts, questions, objections and hand-off rules written with you and tested on real scenarios."
+    },
+    {
+      "title": "Voice agent build",
+      "detail": "An agent on Retell, Vapi or GHL Voice AI with a voice, language and pace that fit your brand."
+    },
+    {
+      "title": "Calendar and CRM actions",
+      "detail": "The agent checks availability, books, reschedules and logs every call with a summary in your CRM."
+    },
+    {
+      "title": "Live transfer",
+      "detail": "Rules for when the agent hands the call to a person, and to whom."
+    },
+    {
+      "title": "Outbound campaigns",
+      "detail": "Speed-to-lead calls and reactivation calls, within the calling rules for your country."
+    },
+    {
+      "title": "Monitoring",
+      "detail": "Call recordings, transcripts and a weekly review to improve answers."
+    }
+  ],
+  "tools": [
+    "Retell AI",
+    "Vapi",
+    "GoHighLevel Voice AI",
+    "OpenAI",
+    "Twilio",
+    "Cal.com and GHL calendars"
+  ],
+  "process": [
+    {
+      "title": "Scope",
+      "detail": "We listen to sample calls and define exactly what the agent should and shouldn't handle."
+    },
+    {
+      "title": "Script and build",
+      "detail": "We write the prompts, connect calendars and CRM, and set up the phone number."
+    },
+    {
+      "title": "Test",
+      "detail": "We run dozens of test calls, including awkward ones, and fix every miss before go-live."
+    },
+    {
+      "title": "Launch and tune",
+      "detail": "We launch on a share of calls first, review transcripts weekly and widen as it proves itself."
+    }
+  ],
+  "timeline": "2 to 4 weeks from kickoff to live calls.",
+  "priceFrom": "[PLACEHOLDER: starting price for AI voice agents]",
+  "faqs": [
+    {
+      "question": "Will callers know they're talking to AI?",
+      "answer": "We recommend the agent says so at the start. Callers mostly care that they get a fast, useful answer, and being upfront avoids complaints and meets disclosure rules in several regions."
+    },
+    {
+      "question": "What languages can the agent speak?",
+      "answer": "English plus many others, including Arabic and Urdu, with accent and voice options. Quality varies by language, so we test with native speakers before launch."
+    },
+    {
+      "question": "What does it cost per call?",
+      "answer": "Platform usage is billed per minute by the provider and is separate from our fee. We estimate it during scoping based on your call volume."
+    }
+  ],
+  "seo": {
+    "title": "AI voice agents | HTH (Hub to Hub)",
+    "description": "Voice agents that answer inbound calls, make outbound calls and book appointments into your calendar."
+  }
+}

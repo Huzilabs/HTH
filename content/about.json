@@ -1,0 +1,54 @@
+{
+  "seo": {
+    "title": "About | HTH (Hub to Hub)",
+    "description": "Why we're called Hub to Hub, how we work remotely across time zones for clients in Pakistan, the US, the UK and the Gulf, and the team behind the work."
+  },
+  "hero": {
+    "eyebrow": "About",
+    "heading": "We build the routes between the parts of your business.",
+    "body": "Most businesses already have the pieces: a website, a CRM, ad accounts, a WhatsApp number, maybe a store. What they don't have is the route between them. That's what we build."
+  },
+  "story": {
+    "heading": "Why Hub to Hub",
+    "paragraphs": [
+      "Every part of a business is a hub. The website is where people arrive. The CRM is where they're tracked. Ads bring them in, chat and calls answer them, the store takes the money.",
+      "Each of those hubs usually works fine on its own. The losses happen in between: the form that never reached the CRM, the missed call nobody returned, the ad that got credit for a sale it didn't make.",
+      "We named the agency after that gap. Our job is to connect hub to hub, so a lead moves from first click to closed sale without waiting on anyone to copy, paste or remember."
+    ]
+  },
+  "principles": {
+    "heading": "How we work",
+    "items": [
+      { "title": "Your accounts, your data", "detail": "We build inside your CRM, ad, hosting and store accounts. If we part ways, you keep everything." },
+      { "title": "Map before we build", "detail": "You approve a written map of the system before any build starts, so there are no surprises in the invoice or the result." },
+      { "title": "Measured on sales", "detail": "We report on booked calls, orders and revenue by source, not clicks and impressions." },
+      { "title": "Documented by default", "detail": "Every workflow, agent and integration is documented so your team, or anyone else, can run it." }
+    ]
+  },
+  "remote": {
+    "heading": "Remote, across four regions",
+    "body": "We work with clients in Pakistan, the US, the UK and the Gulf. Being remote is how we're set up, not a compromise.",
+    "points": [
+      { "title": "A daily overlap window", "detail": "We agree a fixed window each day when we're online together for calls and quick decisions." },
+      { "title": "Async by default", "detail": "Progress arrives as short Loom videos and written updates, so nothing waits for a meeting." },
+      { "title": "One shared board", "detail": "Every task, its status and its owner live on a board you can see at any time." },
+      { "title": "Fast response", "detail": "[PLACEHOLDER: response time commitment, e.g. replies within one business day in your time zone]" }
+    ],
+    "zones": [
+      { "label": "US Eastern", "tz": "America/New_York" },
+      { "label": "UK", "tz": "Europe/London" },
+      { "label": "Gulf", "tz": "Asia/Dubai" },
+      { "label": "Pakistan", "tz": "Asia/Karachi" }
+    ]
+  },
+  "team": {
+    "heading": "The team",
+    "body": "A small senior team, each focused on one hub, working together on every system.",
+    "members": [
+      { "role": "CRM and automation lead", "hub": "crm-automation" },
+      { "role": "AI agents lead", "hub": "ai" },
+      { "role": "Web and commerce lead", "hub": "web-commerce" },
+      { "role": "Growth lead", "hub": "growth" }
+    ]
+  }
+}

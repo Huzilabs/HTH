@@ -1,0 +1,32 @@
+{
+  "slug": "real-estate-speed-to-lead",
+  "title": "Answering every property lead in under a minute",
+  "client": "[PLACEHOLDER: Client name]",
+  "industry": "Real estate",
+  "region": "[PLACEHOLDER: Country / city]",
+  "year": "[PLACEHOLDER: Year]",
+  "hubs": ["crm-automation", "ai"],
+  "summary": "A brokerage buying portal and Meta leads was calling them back hours later. We built a GoHighLevel system with instant replies, an AI voice agent that qualifies and books viewings, and agent routing by area.",
+  "problem": "Leads arrived from three property portals, Meta lead ads and the website, each into a different inbox. Agents called back when they had time, often the next day, and there was no record of who had spoken to whom. The owner could see ad spend going up, but not which leads became viewings or sales.",
+  "built": [
+    "One GoHighLevel pipeline fed by every portal, Meta lead ads and website forms, with the source tagged on each lead",
+    "An instant SMS and WhatsApp reply on every new lead, day or night",
+    "A Retell AI voice agent that calls new leads within minutes, asks budget, area and timeline, and books a viewing into the right agent's calendar",
+    "Round-robin assignment by area, with missed-call text back on every agent's number",
+    "A seven-day nurture sequence for leads that don't book, stopping the moment they reply",
+    "A dashboard of response time, viewings booked and deals won by lead source"
+  ],
+  "stack": ["GoHighLevel", "Retell AI", "n8n", "Meta Lead Ads", "Twilio", "Looker Studio"],
+  "results": [
+    { "value": "[PLACEHOLDER: before → after]", "label": "Average time to first reply" },
+    { "value": "[PLACEHOLDER: %]", "label": "Change in viewings booked per month" },
+    { "value": "[PLACEHOLDER: number]", "label": "Leads handled by the voice agent per month" }
+  ],
+  "screenshots": [
+    { "label": "GoHighLevel pipeline view", "alt": "GoHighLevel pipeline showing leads by stage from new enquiry to deal won" },
+    { "label": "Voice agent call summary", "alt": "CRM contact record with an AI voice agent call summary and booked viewing" },
+    { "label": "Lead source dashboard", "alt": "Dashboard showing response time and viewings booked by lead source" }
+  ],
+  "testimonialId": "real-estate-speed-to-lead",
+  "placeholder": true
+}

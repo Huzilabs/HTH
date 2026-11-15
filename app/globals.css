@@ -1,8 +1,146 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
 
-/* Temporary base. Replaced by /styles/tokens.css once a brand direction is chosen. */
-body {
-  background: #ffffff;
-  color: #111111;
-  font-family: ui-sans-serif, system-ui, sans-serif;
+@layer base {
+  html {
+    background: var(--color-ground);
+    color: var(--color-ink);
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    background: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-ground);
+  }
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Route line draws as it enters the viewport. Pure CSS; ignored where unsupported. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .route-draw-x,
+    .route-draw-y {
+      animation: route-draw linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 45%;
+    }
+    .route-draw-x {
+      transform-origin: left center;
+      --route-from: scaleX(0);
+    }
+    .route-draw-y {
+      transform-origin: center top;
+      --route-from: scaleY(0);
+    }
+  }
+}
+@keyframes route-draw {
+  from {
+    transform: var(--route-from);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@utility display {
+  font-weight: 700;
+  font-stretch: var(--display-stretch);
+  letter-spacing: var(--tracking-display);
+}
+
+@utility label {
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  line-height: var(--text-label--line-height);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+@utility prose-hth {
+  max-width: var(--container-prose);
+  color: var(--color-muted);
+  & > * + * {
+    margin-top: 1.25em;
+  }
+  & h2 {
+    margin-top: 2.25em;
+    color: var(--color-ink);
+    font-size: var(--text-h3);
+    line-height: var(--text-h3--line-height);
+    font-weight: 700;
+    font-stretch: var(--display-stretch);
+    letter-spacing: var(--tracking-tight);
+  }
+  & h3 {
+    margin-top: 2em;
+    color: var(--color-ink);
+    font-size: var(--text-h4);
+    font-weight: 700;
+  }
+  & a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  & strong {
+    color: var(--color-ink);
+  }
+  & ul {
+    list-style: none;
+    padding: 0;
+  }
+  & ul > li {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  & ul > li + li {
+    margin-top: 0.5rem;
+  }
+  & ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 9999px;
+  }
+  & ol {
+    list-style: decimal;
+    padding-left: 1.25rem;
+  }
+  & blockquote {
+    border-left: 2px solid var(--color-accent);
+    padding-left: 1.25rem;
+    color: var(--color-ink);
+  }
+  & code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    color: var(--color-ink);
+  }
 }

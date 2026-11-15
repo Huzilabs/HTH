@@ -1,0 +1,90 @@
+{
+  "slug": "social-media-content",
+  "hub": "growth",
+  "order": 4,
+  "name": "Social media and content",
+  "summary": "Planned, consistent social content that supports your ads, SEO and sales conversations.",
+  "answer": "Social media and content management is planning, producing and publishing posts, short videos and articles for your brand's channels. HTH creates content plans tied to your services and offers, produces posts and short-form video edits, and connects social enquiries into your CRM and chatbots. It's for businesses that know they should post consistently but can't make the time.",
+  "whoFor": [
+    "Clinics and medspas that win clients on Instagram",
+    "Real estate agents building a local presence",
+    "B2B founders who want to post on LinkedIn consistently",
+    "Brands whose social accounts go quiet for weeks at a time"
+  ],
+  "problem": {
+    "heading": "You post when there's time, which is rarely.",
+    "body": "Accounts go quiet for weeks, then get a burst of posts that don't connect to anything you sell. Enquiries that do come through DMs get answered late, or not at all."
+  },
+  "deliverables": [
+    {
+      "title": "Content strategy",
+      "detail": "Content pillars, formats and a posting rhythm tied to your offers."
+    },
+    {
+      "title": "Monthly calendar",
+      "detail": "A planned calendar you approve before anything is published."
+    },
+    {
+      "title": "Production",
+      "detail": "Graphics, captions, carousels and short-form video edits from your footage."
+    },
+    {
+      "title": "Publishing",
+      "detail": "Scheduling across Instagram, Facebook, LinkedIn and TikTok."
+    },
+    {
+      "title": "DM capture",
+      "detail": "Comment and DM automations that turn interest into leads in your CRM."
+    },
+    {
+      "title": "Monthly review",
+      "detail": "What worked, what didn't and what to make more of."
+    }
+  ],
+  "tools": [
+    "Meta Business Suite",
+    "Canva",
+    "CapCut",
+    "Later or Metricool",
+    "ManyChat",
+    "GoHighLevel Social Planner"
+  ],
+  "process": [
+    {
+      "title": "Strategy",
+      "detail": "We define the audience, pillars and what each channel is for."
+    },
+    {
+      "title": "Plan",
+      "detail": "A monthly calendar approved by you before production."
+    },
+    {
+      "title": "Produce and publish",
+      "detail": "We create, schedule and publish on time, every week."
+    },
+    {
+      "title": "Review",
+      "detail": "Monthly review of reach, engagement and leads from social."
+    }
+  ],
+  "timeline": "Strategy and first month's calendar in 2 weeks, then ongoing.",
+  "priceFrom": "[PLACEHOLDER: starting monthly price for social media and content]",
+  "faqs": [
+    {
+      "question": "Do you film content?",
+      "answer": "We plan the shots and edit what you film on your phone. On-site filming can be arranged in some locations."
+    },
+    {
+      "question": "Do we approve posts before they go out?",
+      "answer": "Always. Nothing is published until you've approved the calendar."
+    },
+    {
+      "question": "Which platforms do you cover?",
+      "answer": "Instagram, Facebook, LinkedIn and TikTok. We recommend focusing on the one or two where your customers actually are."
+    }
+  ],
+  "seo": {
+    "title": "Social media and content | HTH (Hub to Hub)",
+    "description": "Planned, consistent social content that supports your ads, SEO and sales conversations."
+  }
+}

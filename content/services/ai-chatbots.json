@@ -1,0 +1,90 @@
+{
+  "slug": "ai-chatbots",
+  "hub": "ai",
+  "order": 2,
+  "name": "AI chatbots",
+  "summary": "Chatbots for WhatsApp, your website, Instagram and Messenger that answer, qualify and book.",
+  "answer": "An AI chatbot answers customer messages automatically on WhatsApp, your website, Instagram and Facebook Messenger, using your own prices, policies and FAQs. HTH builds chatbots that qualify enquiries, book appointments and hand over to your team when needed, with every conversation saved to your CRM. They're for businesses getting more messages than their team can answer quickly.",
+  "whoFor": [
+    "Clinics and medspas with heavy WhatsApp and Instagram enquiries",
+    "Ecommerce brands answering the same order questions all day",
+    "Real estate teams handling listing enquiries out of hours",
+    "Businesses serving customers in more than one language"
+  ],
+  "problem": {
+    "heading": "Messages pile up and the slow replies cost you bookings.",
+    "body": "Most enquiries arrive in DMs and WhatsApp, often at night. Your team answers the same ten questions over and over, and by the time they reply, the customer has moved on or booked elsewhere."
+  },
+  "deliverables": [
+    {
+      "title": "Knowledge base",
+      "detail": "Your services, prices, policies and FAQs structured so the bot answers accurately."
+    },
+    {
+      "title": "Channel setup",
+      "detail": "WhatsApp Business API, website widget, Instagram and Messenger connected to one inbox."
+    },
+    {
+      "title": "Qualify and book",
+      "detail": "Questions that sort serious leads from browsers, then a booking or a hand-off."
+    },
+    {
+      "title": "Human hand-off",
+      "detail": "Clear rules for passing the chat to a person, with the full conversation attached."
+    },
+    {
+      "title": "CRM sync",
+      "detail": "Every contact and conversation logged in your CRM with tags and lead source."
+    },
+    {
+      "title": "Guardrails",
+      "detail": "Topics the bot won't answer, tested against tricky and off-topic questions."
+    }
+  ],
+  "tools": [
+    "OpenAI",
+    "WhatsApp Business API",
+    "GoHighLevel Conversation AI",
+    "ManyChat",
+    "Instagram and Messenger APIs",
+    "n8n"
+  ],
+  "process": [
+    {
+      "title": "Collect",
+      "detail": "We gather your FAQs, past chats and policies and agree what the bot should handle."
+    },
+    {
+      "title": "Build",
+      "detail": "We build the bot, connect the channels and set up booking and hand-off."
+    },
+    {
+      "title": "Test",
+      "detail": "We test with your team and real past questions until the answers are right."
+    },
+    {
+      "title": "Launch and review",
+      "detail": "We go live, review conversations weekly for the first month and keep improving answers."
+    }
+  ],
+  "timeline": "2 to 3 weeks, plus WhatsApp Business API approval time where needed.",
+  "priceFrom": "[PLACEHOLDER: starting price for AI chatbots]",
+  "faqs": [
+    {
+      "question": "Do we need the WhatsApp Business API?",
+      "answer": "For an AI chatbot on WhatsApp, yes. We handle the application and setup with an official provider, and explain the per-conversation fees Meta charges."
+    },
+    {
+      "question": "What if the bot gives a wrong answer?",
+      "answer": "Answers come only from the knowledge base you approve, and anything outside it goes to a person. We review conversations to catch and fix gaps."
+    },
+    {
+      "question": "Can it reply in Urdu or Arabic?",
+      "answer": "Yes. It can detect the customer's language and reply in it, and we test each language before launch."
+    }
+  ],
+  "seo": {
+    "title": "AI chatbots | HTH (Hub to Hub)",
+    "description": "Chatbots for WhatsApp, your website, Instagram and Messenger that answer, qualify and book."
+  }
+}

@@ -107,7 +107,7 @@ export default function BrandPage() {
   return (
     <main className={`${brandFontVars} min-h-screen bg-[#e7e7e4] text-[#111]`}>
       <header className="mx-auto max-w-[1600px] px-4 py-10 sm:px-8">
-        <p className="text-[0.75rem] font-semibold uppercase tracking-[0.12em]">Internal · not indexed · not in nav</p>
+        <p className="text-[0.75rem] font-semibold uppercase tracking-[0.12em]">Internal · not indexed · not in nav · Chosen: Direction B (Network), now in /styles/tokens.css</p>
         <h1 className="mt-2 text-[2rem] font-semibold tracking-tight">HTH brand directions</h1>
         <p className="mt-2 max-w-[70ch] text-[0.9375rem] leading-relaxed">
           Three directions for Hub to Hub. Each uses one ground, one ink and one accent. Identity and system pieces are

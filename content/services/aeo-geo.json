@@ -1,0 +1,90 @@
+{
+  "slug": "aeo-geo",
+  "hub": "growth",
+  "order": 2,
+  "name": "AEO and GEO",
+  "summary": "Getting your brand cited by ChatGPT, Gemini, Perplexity and Google AI Overviews.",
+  "answer": "AEO (answer engine optimisation) and GEO (generative engine optimisation) are the work of making your business the source that AI assistants like ChatGPT, Gemini, Perplexity and Google AI Overviews quote and recommend. HTH structures your website content, schema markup and third-party mentions so AI engines can understand, trust and cite you. It's for businesses whose customers have started asking AI instead of searching Google.",
+  "whoFor": [
+    "Businesses already ranking in Google that want AI visibility too",
+    "Professional services where clients ask AI for recommendations",
+    "Brands that want to control how AI describes them",
+    "Agencies adding AI search to their SEO offer"
+  ],
+  "problem": {
+    "heading": "Customers ask AI who to hire, and you're not in the answer.",
+    "body": "AI assistants summarise the web into one answer with a few sources. If your site doesn't state clearly what you do, who for and where, and nobody else mentions you, the AI recommends someone else, or describes you wrongly."
+  },
+  "deliverables": [
+    {
+      "title": "AI visibility audit",
+      "detail": "What ChatGPT, Gemini, Perplexity and AI Overviews say about you and your competitors today."
+    },
+    {
+      "title": "Answer-first content",
+      "detail": "Pages restructured to answer questions directly in quotable, factual language."
+    },
+    {
+      "title": "Structured data",
+      "detail": "Organization, Service, FAQ, Article and other schema so machines understand your business."
+    },
+    {
+      "title": "llms.txt and crawl access",
+      "detail": "An llms.txt summary and robots settings that let AI crawlers read the right pages."
+    },
+    {
+      "title": "Entity and citation building",
+      "detail": "Consistent listings, profiles and mentions on the sources AI engines rely on."
+    },
+    {
+      "title": "Tracking",
+      "detail": "Regular checks of AI answers for your key questions, reported monthly."
+    }
+  ],
+  "tools": [
+    "Schema.org markup",
+    "llms.txt",
+    "Google Search Console",
+    "Perplexity",
+    "ChatGPT search",
+    "Ahrefs"
+  ],
+  "process": [
+    {
+      "title": "Benchmark",
+      "detail": "We ask AI engines the questions your customers ask and record who gets cited."
+    },
+    {
+      "title": "Restructure",
+      "detail": "We rewrite key pages answer-first and add structured data."
+    },
+    {
+      "title": "Build authority",
+      "detail": "We strengthen your presence on the third-party sources AI engines trust."
+    },
+    {
+      "title": "Track",
+      "detail": "We re-run the same questions monthly and report changes."
+    }
+  ],
+  "timeline": "On-site changes in 2 to 4 weeks. Citation changes typically show over 2 to 4 months.",
+  "priceFrom": "[PLACEHOLDER: starting monthly price for AEO and GEO]",
+  "faqs": [
+    {
+      "question": "Is AEO different from SEO?",
+      "answer": "They overlap heavily. Good SEO is the foundation, but AEO puts more weight on clear, quotable answers, structured data, and being mentioned on sources AI engines trust."
+    },
+    {
+      "question": "Can you guarantee ChatGPT will mention us?",
+      "answer": "No one can guarantee what an AI says. We can make you far easier to understand and cite, and we track the results honestly."
+    },
+    {
+      "question": "Does this website use AEO?",
+      "answer": "Yes. Every service page opens with a direct answer, uses structured data, and the site publishes an llms.txt summary."
+    }
+  ],
+  "seo": {
+    "title": "AEO and GEO | HTH (Hub to Hub)",
+    "description": "Getting your brand cited by ChatGPT, Gemini, Perplexity and Google AI Overviews."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "services": {
+    "seo": {
+      "title": "Services | HTH (Hub to Hub)",
+      "description": "Four connected hubs: CRM and automation, AI voice agents and chatbots, websites and Shopify, and growth through SEO, AEO and ads."
+    },
+    "eyebrow": "Services",
+    "heading": "Four hubs. One connected system.",
+    "body": "Each hub solves a problem on its own. Connected, they take a lead from first click to closed sale without anyone dropping the ball. Start with the hub that hurts most."
+  },
+  "work": {
+    "seo": {
+      "title": "Work and case studies | HTH (Hub to Hub)",
+      "description": "Case studies of CRM, AI agent, website, Shopify and growth systems built by HTH for real estate, clinics, ecommerce, law and local services."
+    },
+    "eyebrow": "Work",
+    "heading": "Systems we've built.",
+    "body": "Each case study shows the problem, what we built, the stack and what changed. Filter by hub to see the work closest to yours.",
+    "filterLabel": "Filter by hub",
+    "allLabel": "All hubs",
+    "empty": "No case studies for this hub yet."
+  },
+  "insights": {
+    "seo": {
+      "title": "Insights | HTH (Hub to Hub)",
+      "description": "Practical notes on CRM, automation, AI agents, websites, SEO and AI search from the HTH team."
+    },
+    "eyebrow": "Insights",
+    "heading": "Notes from the build.",
+    "body": "Practical write-ups on what we learn building connected systems. No fluff, no listicles."
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "heading": "This route doesn't connect.",
+    "body": "The page you were looking for has moved or never existed. Here's where most people are headed."
+  }
+}

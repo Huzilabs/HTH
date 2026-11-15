@@ -1,0 +1,80 @@
+[
+  {
+    "id": "real-estate-speed-to-lead",
+    "quote": "We were paying for portal and Facebook leads and calling them back the next morning. Now every enquiry gets a text inside a minute, the voice agent qualifies them and books the viewing, and my agents walk in to a calendar instead of a list of numbers. The pipeline finally matches what's actually happening on the ground.",
+    "name": "[Client name]",
+    "role": "Broker-owner",
+    "company": "[Brokerage name]",
+    "industry": "Real estate",
+    "hub": "crm-automation",
+    "result": "3x more viewings booked from the same ad spend",
+    "photo": null,
+    "featured": true,
+    "placeholder": true
+  },
+  {
+    "id": "medspa-whatsapp",
+    "quote": "Half our enquiries came in on WhatsApp after 9pm and nobody saw them until the morning. The bot now answers price questions, explains the consultation, and books straight into our calendar. Our front desk stopped copying messages into a spreadsheet.",
+    "name": "[Client name]",
+    "role": "Clinic manager",
+    "company": "[Medspa name]",
+    "industry": "Clinics and medspas",
+    "hub": "ai",
+    "result": "31% more consultations booked from WhatsApp",
+    "photo": null,
+    "featured": false,
+    "placeholder": true
+  },
+  {
+    "id": "ecommerce-cod",
+    "quote": "Fake COD orders were eating our margin. HTH rebuilt the store on a faster theme and added WhatsApp confirmation before dispatch. Fewer parcels come back now, and checkout on mobile is noticeably quicker.",
+    "name": "[Client name]",
+    "role": "Co-founder",
+    "company": "[Store name]",
+    "industry": "Ecommerce",
+    "hub": "web-commerce",
+    "result": "COD returns down 38% in two months",
+    "photo": null,
+    "featured": false,
+    "placeholder": true
+  },
+  {
+    "id": "law-seo-aeo",
+    "quote": "New intake calls now tell us they found us on Google, and a couple have said ChatGPT suggested us. Neither happened a year ago.",
+    "name": "[Client name]",
+    "role": "Managing partner",
+    "company": "[Law firm name]",
+    "industry": "Law",
+    "hub": "growth",
+    "result": null,
+    "photo": null,
+    "featured": false,
+    "placeholder": true
+  },
+  {
+    "id": "local-services-missed-call",
+    "quote": "I'm on a job half the day and couldn't answer the phone. Missed-call text back means the customer gets a reply while I'm still up the ladder, and review requests go out without me having to remember. Simple stuff, but it's the stuff I never got round to.",
+    "name": "[Client name]",
+    "role": "Owner",
+    "company": "[Plumbing and heating company]",
+    "industry": "Local services",
+    "hub": "crm-automation",
+    "result": "Google reviews doubled in three months",
+    "photo": null,
+    "featured": false,
+    "placeholder": true
+  },
+  {
+    "id": "agency-partner-white-label",
+    "quote": "We white-label HTH for our GoHighLevel builds. They work to our snapshot standards, document everything on Loom and hit client deadlines across a nine-hour time difference. That's rarer than it should be.",
+    "name": "[Client name]",
+    "role": "Founder",
+    "company": "[Agency name]",
+    "industry": "Agency partner",
+    "hub": "crm-automation",
+    "result": null,
+    "photo": null,
+    "featured": false,
+    "placeholder": true
+  }
+]

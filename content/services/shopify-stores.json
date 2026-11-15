@@ -1,0 +1,90 @@
+{
+  "slug": "shopify-stores",
+  "hub": "web-commerce",
+  "order": 3,
+  "name": "Shopify stores",
+  "summary": "Shopify setup, themes, apps, COD and payment setup for stores selling locally and internationally.",
+  "answer": "Shopify store development is setting up and customising an online store on Shopify, from theme and product catalogue to payments, shipping and apps. HTH builds and fixes Shopify stores, including cash on delivery (COD) confirmation flows and local payment gateways for Pakistan and the Gulf, and connects orders to your CRM and ad tracking. It's for brands launching a store or fixing one that isn't converting.",
+  "whoFor": [
+    "Brands launching their first online store",
+    "Stores in Pakistan and the Gulf relying on cash on delivery",
+    "Shopify stores with low conversion on mobile",
+    "Businesses moving from WooCommerce or Instagram-only selling"
+  ],
+  "problem": {
+    "heading": "The store gets traffic but too few orders stick.",
+    "body": "Mobile checkout is clunky, COD orders get refused at the door, and nobody knows which ad produced which sale. Apps pile up, the theme slows down and margins disappear into returns."
+  },
+  "deliverables": [
+    {
+      "title": "Store setup",
+      "detail": "Products, collections, shipping zones, taxes and policies configured properly."
+    },
+    {
+      "title": "Theme",
+      "detail": "A fast theme customised to your brand, built for mobile first."
+    },
+    {
+      "title": "Payments and COD",
+      "detail": "Local gateways and COD with WhatsApp or SMS order confirmation to cut fake orders."
+    },
+    {
+      "title": "Apps",
+      "detail": "Only the apps you need: reviews, upsells, subscriptions, shipping and courier integrations."
+    },
+    {
+      "title": "Tracking",
+      "detail": "Meta pixel and Conversions API, Google Ads and GA4 set up so ad spend maps to real orders."
+    },
+    {
+      "title": "Retention",
+      "detail": "Abandoned cart, post-purchase and win-back flows by WhatsApp, SMS and email."
+    }
+  ],
+  "tools": [
+    "Shopify",
+    "Shopify Payments and local gateways",
+    "WhatsApp Business API",
+    "Klaviyo",
+    "Meta Conversions API",
+    "GA4"
+  ],
+  "process": [
+    {
+      "title": "Audit or plan",
+      "detail": "For new stores, catalogue and requirements. For existing ones, a conversion and speed audit."
+    },
+    {
+      "title": "Design and build",
+      "detail": "Theme, product pages and checkout set up on a development store."
+    },
+    {
+      "title": "Connect",
+      "detail": "Payments, couriers, COD confirmation, tracking and CRM."
+    },
+    {
+      "title": "Launch and optimise",
+      "detail": "Go-live, test orders, then a review of conversion data after 30 days."
+    }
+  ],
+  "timeline": "2 to 6 weeks depending on catalogue size and integrations.",
+  "priceFrom": "[PLACEHOLDER: starting price for Shopify stores]",
+  "faqs": [
+    {
+      "question": "Can you reduce fake COD orders?",
+      "answer": "Yes. An automatic WhatsApp or SMS confirmation before dispatch, plus rules for risky orders, typically filters out a large share of orders that would be refused."
+    },
+    {
+      "question": "Which payment gateways do you set up?",
+      "answer": "Shopify Payments where available, and local gateways and wallets for Pakistan and the Gulf depending on your business registration."
+    },
+    {
+      "question": "Do you design custom Shopify themes?",
+      "answer": "We usually customise a fast, well-supported theme, which is quicker and cheaper to maintain. Fully custom themes are available when the brand needs it."
+    }
+  ],
+  "seo": {
+    "title": "Shopify stores | HTH (Hub to Hub)",
+    "description": "Shopify setup, themes, apps, COD and payment setup for stores selling locally and internationally."
+  }
+}

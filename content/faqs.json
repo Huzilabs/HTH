@@ -1,0 +1,16 @@
+{
+  "general": [
+    { "question": "What does HTH (Hub to Hub) do?", "answer": "HTH is a digital growth and automation agency. We build and connect the systems that win customers: CRM and automation, AI voice agents and chatbots, websites and Shopify stores, and growth through SEO, AI search visibility and paid ads." },
+    { "question": "Who do you work with?", "answer": "Business owners and agencies in Pakistan, the US, the UK and the Gulf, mostly in real estate, clinics and medspas, ecommerce, law and local services." },
+    { "question": "Do I have to buy all four hubs?", "answer": "No. Most clients start with one hub, usually CRM and follow-up or a new website, and add others later. Everything we build is designed to connect, so nothing has to be rebuilt." },
+    { "question": "How do you work across time zones?", "answer": "We agree a daily overlap window with each client, send written and Loom updates so nothing depends on being online at the same time, and keep a shared board of every task." },
+    { "question": "Who owns the accounts and the work?", "answer": "You do. We build inside your CRM, ad, hosting and Shopify accounts, and hand over documentation for everything." },
+    { "question": "How do we start?", "answer": "Book a call. We'll look at how leads reach you today and where they go cold, then send a written plan and quote." }
+  ],
+  "pricing": [
+    { "question": "Why are prices shown as 'starting from'?", "answer": "Every system depends on your tools, lead sources and volume. Starting prices show the typical entry point; we quote a fixed price after the first call." },
+    { "question": "Are software subscriptions included?", "answer": "No. Tools like GoHighLevel, Shopify, Retell or OpenAI are billed to you directly by the provider, so you keep ownership. We'll estimate those costs up front." },
+    { "question": "Do you offer monthly plans?", "answer": "Yes. Most clients keep us on a monthly plan for management, improvements and support after the build." },
+    { "question": "Which currencies do you invoice in?", "answer": "[PLACEHOLDER: invoicing currencies and payment methods, e.g. USD, GBP, AED, PKR; bank transfer, Wise, Payoneer]" }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "slug": "seo",
+  "hub": "growth",
+  "order": 1,
+  "name": "SEO",
+  "summary": "Technical, on-page and local SEO that gets you found for searches that lead to enquiries.",
+  "answer": "SEO (search engine optimisation) is improving your website so it appears higher in Google for the searches your customers make. HTH handles technical SEO, on-page content and local SEO, including Google Business Profile, and measures success by enquiries from organic search rather than rankings alone. It's for businesses that want a steady flow of leads without paying for every click.",
+  "whoFor": [
+    "Local businesses that want to appear in the Google map pack",
+    "Service businesses relying too heavily on paid ads",
+    "Sites that lost traffic after a redesign or Google update",
+    "Businesses expanding into new cities or countries"
+  ],
+  "problem": {
+    "heading": "Customers search for what you do and find your competitors.",
+    "body": "Your site has technical issues Google can see and you can't, your service pages are thin, and your Google Business Profile hasn't been touched in a year. Meanwhile competitors with worse service rank above you."
+  },
+  "deliverables": [
+    {
+      "title": "Technical audit and fixes",
+      "detail": "Crawl, indexing, speed, structured data and site architecture issues found and fixed."
+    },
+    {
+      "title": "Keyword and page plan",
+      "detail": "The searches that lead to enquiries, mapped to the pages that should rank for them."
+    },
+    {
+      "title": "On-page optimisation",
+      "detail": "Titles, headings, content and internal links improved on your key pages."
+    },
+    {
+      "title": "Local SEO",
+      "detail": "Google Business Profile, citations, reviews and location pages for each area you serve."
+    },
+    {
+      "title": "Content",
+      "detail": "New service and location pages, and articles that answer real customer questions."
+    },
+    {
+      "title": "Monthly reporting",
+      "detail": "Rankings, traffic and, most importantly, enquiries from organic search."
+    }
+  ],
+  "tools": [
+    "Google Search Console",
+    "GA4",
+    "Ahrefs",
+    "Screaming Frog",
+    "Google Business Profile",
+    "Looker Studio"
+  ],
+  "process": [
+    {
+      "title": "Audit",
+      "detail": "Technical, content and competitor audit, with a prioritised fix list."
+    },
+    {
+      "title": "Fix",
+      "detail": "We fix technical issues first, because they hold everything else back."
+    },
+    {
+      "title": "Build",
+      "detail": "On-page improvements, local SEO and new content, month by month."
+    },
+    {
+      "title": "Report",
+      "detail": "A monthly report and call focused on leads, not vanity metrics."
+    }
+  ],
+  "timeline": "Technical fixes in the first month. Meaningful ranking gains usually take 3 to 6 months.",
+  "priceFrom": "[PLACEHOLDER: starting monthly price for SEO]",
+  "faqs": [
+    {
+      "question": "How long until we see results?",
+      "answer": "Technical fixes can show results within weeks. Competitive rankings usually take three to six months of consistent work. We report progress monthly so you can see the direction early."
+    },
+    {
+      "question": "Do you guarantee first place on Google?",
+      "answer": "No, and be wary of anyone who does. We commit to the work, the reporting and a clear plan."
+    },
+    {
+      "question": "Do you build backlinks?",
+      "answer": "We focus on earning links through useful content, digital PR and local citations. We don't buy links from link farms."
+    }
+  ],
+  "seo": {
+    "title": "SEO | HTH (Hub to Hub)",
+    "description": "Technical, on-page and local SEO that gets you found for searches that lead to enquiries."
+  }
+}

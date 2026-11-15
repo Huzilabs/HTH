@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "crm-automation",
+    "number": "01",
+    "name": "CRM and Automation Hub",
+    "shortName": "CRM and Automation",
+    "summary": "Pipelines, follow-up and reporting in GoHighLevel, HubSpot or Zoho, wired to every lead source you have.",
+    "description": "The CRM is where every other hub reports in. We set it up around how you actually sell, then automate the follow-up, hand-offs and reporting that usually live in someone's head.",
+    "routeRole": "Routes every lead to the right place and makes sure nothing waits."
+  },
+  {
+    "slug": "ai",
+    "number": "02",
+    "name": "AI Hub",
+    "shortName": "AI",
+    "summary": "Voice agents and chatbots that answer, qualify and book, around the clock, in your brand's voice.",
+    "description": "AI agents that pick up the phone, reply on WhatsApp and Instagram, and book appointments into your calendar, with clear rules on when to hand over to a person.",
+    "routeRole": "Answers in seconds, qualifies, and books the appointment."
+  },
+  {
+    "slug": "web-commerce",
+    "number": "03",
+    "name": "Web and Commerce Hub",
+    "shortName": "Web and Commerce",
+    "summary": "Fast websites, Shopify stores and landing pages built to capture leads and orders, not just look good.",
+    "description": "Websites, stores and funnels that load fast, rank, and send every lead and order straight into your CRM with the source attached.",
+    "routeRole": "Captures the lead or order with its source attached."
+  },
+  {
+    "slug": "growth",
+    "number": "04",
+    "name": "Growth Hub",
+    "shortName": "Growth",
+    "summary": "SEO, AI-search visibility, paid ads and content that bring the right people in at a cost you can track.",
+    "description": "Search, AI answer engines, paid social and paid search, measured against booked calls and sales in your CRM rather than clicks.",
+    "routeRole": "Brings the right people in and proves what it cost."
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "slug": "paid-ads",
+  "hub": "growth",
+  "order": 3,
+  "name": "Meta ads and Google ads",
+  "summary": "Meta and Google ads managed against booked calls and sales, not clicks.",
+  "answer": "Paid ads management is planning, running and optimising advertising campaigns on platforms like Meta (Facebook and Instagram) and Google. HTH manages Meta and Google ads with conversion tracking connected to your CRM, so campaigns are judged on booked calls, qualified leads and sales rather than clicks. It's for businesses ready to spend on ads and wanting to know exactly what that spend returns.",
+  "whoFor": [
+    "Businesses spending on ads without knowing what they return",
+    "Clinics, real estate and local services generating leads",
+    "Ecommerce brands scaling on Meta and Google Shopping",
+    "Businesses whose ad leads are poor quality"
+  ],
+  "problem": {
+    "heading": "The ad dashboard says it's working. The bank account disagrees.",
+    "body": "Platforms report leads and conversions that don't match what your team sees. Cheap leads turn out to be junk, and nobody can say which campaign brought in last month's best customers."
+  },
+  "deliverables": [
+    {
+      "title": "Tracking setup",
+      "detail": "Pixel, Conversions API, GA4 and offline conversions from your CRM, so platforms learn from real sales."
+    },
+    {
+      "title": "Campaign strategy",
+      "detail": "Audiences, offers, budgets and structure for Meta and Google."
+    },
+    {
+      "title": "Creative direction",
+      "detail": "Ad angles and briefs, plus copy, with creative tested systematically."
+    },
+    {
+      "title": "Campaign management",
+      "detail": "Daily checks, weekly optimisation and budget moves toward what works."
+    },
+    {
+      "title": "Lead quality loop",
+      "detail": "Lead quality from the CRM fed back into targeting."
+    },
+    {
+      "title": "Reporting",
+      "detail": "Cost per booked call and per sale, by campaign, in one monthly report."
+    }
+  ],
+  "tools": [
+    "Meta Ads Manager",
+    "Google Ads",
+    "Meta Conversions API",
+    "GA4",
+    "Google Tag Manager",
+    "GoHighLevel attribution"
+  ],
+  "process": [
+    {
+      "title": "Audit",
+      "detail": "We audit your account, tracking and the path from ad to sale."
+    },
+    {
+      "title": "Fix tracking",
+      "detail": "Nothing scales until the numbers are right, so tracking comes first."
+    },
+    {
+      "title": "Launch",
+      "detail": "New campaign structure, offers and creative, launched in controlled tests."
+    },
+    {
+      "title": "Optimise",
+      "detail": "Weekly optimisation and monthly reviews against cost per sale."
+    }
+  ],
+  "timeline": "Tracking and launch in 2 weeks, then ongoing monthly management.",
+  "priceFrom": "[PLACEHOLDER: starting monthly management fee for ads]",
+  "faqs": [
+    {
+      "question": "What ad budget do we need?",
+      "answer": "It depends on your market and goals. We'll recommend a test budget after the audit that's large enough to learn from without risking too much."
+    },
+    {
+      "question": "Is the ad spend included in your fee?",
+      "answer": "No. Ad spend is paid directly to Meta or Google from your account. Our management fee is separate."
+    },
+    {
+      "question": "Who owns the ad accounts?",
+      "answer": "You do. We work inside your accounts with partner access, so you keep all data and history."
+    }
+  ],
+  "seo": {
+    "title": "Meta ads and Google ads | HTH (Hub to Hub)",
+    "description": "Meta and Google ads managed against booked calls and sales, not clicks."
+  }
+}

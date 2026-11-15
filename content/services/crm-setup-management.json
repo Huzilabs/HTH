@@ -1,0 +1,90 @@
+{
+  "slug": "crm-setup-management",
+  "hub": "crm-automation",
+  "order": 1,
+  "name": "CRM setup and management",
+  "summary": "GoHighLevel, HubSpot or Zoho set up around how you sell: pipelines, sub-accounts, snapshots and clean data.",
+  "answer": "CRM setup and management is building and running the system that holds every lead, deal and conversation your business has. HTH sets up GoHighLevel, HubSpot or Zoho around your real sales process, with pipelines, permissions, sub-accounts and snapshots, then keeps it clean and working month to month. It's for owners and agencies whose CRM is either a mess or doesn't exist yet.",
+  "whoFor": [
+    "Businesses moving off spreadsheets, WhatsApp chats and sticky notes",
+    "Teams paying for a CRM that nobody updates",
+    "Agencies that need GoHighLevel sub-accounts and snapshots built to a standard",
+    "Owners who want one dashboard that shows where every lead is"
+  ],
+  "problem": {
+    "heading": "The CRM is either empty, messy or both.",
+    "body": "Leads come in from forms, ads, calls and DMs, but only some of them reach the CRM, and the ones that do sit in stages nobody trusts. Reps keep their own lists. Reports don't match the bank account. So the CRM becomes a monthly bill instead of the system the business runs on."
+  },
+  "deliverables": [
+    {
+      "title": "Pipeline design",
+      "detail": "Stages that match how you actually sell, with clear entry and exit rules for each one."
+    },
+    {
+      "title": "Account structure",
+      "detail": "Users, roles, permissions and, for agencies, GoHighLevel sub-accounts built from a snapshot."
+    },
+    {
+      "title": "Data migration",
+      "detail": "Contacts, deals and history moved in from spreadsheets or your old CRM, de-duplicated and tagged."
+    },
+    {
+      "title": "Lead source tracking",
+      "detail": "Every form, ad, number and inbox mapped so each lead arrives with its source attached."
+    },
+    {
+      "title": "Reporting dashboard",
+      "detail": "A dashboard showing leads, response time, booked calls and won deals by source."
+    },
+    {
+      "title": "Monthly management",
+      "detail": "Optional ongoing admin: new pipelines, user changes, clean-up and fixes as you grow."
+    }
+  ],
+  "tools": [
+    "GoHighLevel",
+    "HubSpot",
+    "Zoho CRM",
+    "Airtable",
+    "Google Sheets",
+    "Looker Studio"
+  ],
+  "process": [
+    {
+      "title": "Audit",
+      "detail": "We review your current tools, lead sources and sales steps, and agree what the CRM must answer."
+    },
+    {
+      "title": "Design",
+      "detail": "You approve a written map of pipelines, fields, tags and users before we build anything."
+    },
+    {
+      "title": "Build and migrate",
+      "detail": "We build in your account, import your data and connect every lead source."
+    },
+    {
+      "title": "Train and hand over",
+      "detail": "Recorded walkthroughs for your team, a short SOP, and 30 days of support."
+    }
+  ],
+  "timeline": "2 to 4 weeks for a new setup. Agency snapshots in 1 to 2 weeks.",
+  "priceFrom": "[PLACEHOLDER: starting price for CRM setup]",
+  "faqs": [
+    {
+      "question": "Which CRM should we use?",
+      "answer": "GoHighLevel suits most service businesses and agencies because calendars, SMS, WhatsApp and pipelines live in one place. HubSpot suits teams with longer B2B sales cycles. Zoho suits businesses already on Zoho Books or Zoho One. We recommend after the audit, not before."
+    },
+    {
+      "question": "Can you fix our existing CRM instead of starting again?",
+      "answer": "Usually, yes. We audit what's there, keep what works and rebuild the parts that don't, so your history stays intact."
+    },
+    {
+      "question": "Do you build GoHighLevel snapshots for agencies?",
+      "answer": "Yes. We build and document snapshots to your standards, and can white-label the work for your clients."
+    }
+  ],
+  "seo": {
+    "title": "CRM setup and management | HTH (Hub to Hub)",
+    "description": "GoHighLevel, HubSpot or Zoho set up around how you sell: pipelines, sub-accounts, snapshots and clean data."
+  }
+}

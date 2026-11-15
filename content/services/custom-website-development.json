@@ -1,0 +1,90 @@
+{
+  "slug": "custom-website-development",
+  "hub": "web-commerce",
+  "order": 1,
+  "name": "Custom website development",
+  "summary": "Fast, custom websites in Next.js and React, built to rank and to send every lead into your CRM.",
+  "answer": "Custom website development is designing and coding a website from scratch rather than adapting a template. HTH builds custom sites in Next.js and React that load fast, are structured for search engines and AI answer engines, and connect every form and booking straight into your CRM. It's for businesses that have outgrown a template or need features a page builder can't handle.",
+  "whoFor": [
+    "Businesses whose site is slow, dated or hard to update",
+    "Companies that need custom features, calculators or portals",
+    "Brands where site speed and SEO directly affect revenue",
+    "Agencies that need a reliable Next.js development partner"
+  ],
+  "problem": {
+    "heading": "Your website looks fine but doesn't do its job.",
+    "body": "It loads slowly on mobile, ranks for nothing useful, and enquiries arrive in an inbox nobody checks. Every change means waiting on a developer or fighting a page builder."
+  },
+  "deliverables": [
+    {
+      "title": "Structure and copy",
+      "detail": "Sitemap, page structure and conversion-focused copy, written for people and search engines."
+    },
+    {
+      "title": "Design",
+      "detail": "A design system and page designs in your brand, approved before development."
+    },
+    {
+      "title": "Next.js build",
+      "detail": "A fast, accessible site with clean code, hosted on Vercel."
+    },
+    {
+      "title": "Content editing",
+      "detail": "A simple way to edit content, from MDX files to a headless CMS if you need one."
+    },
+    {
+      "title": "CRM integration",
+      "detail": "Forms, bookings and chat wired into your CRM with source tracking."
+    },
+    {
+      "title": "SEO foundations",
+      "detail": "Metadata, schema markup, sitemap, analytics and Core Web Vitals in the green."
+    }
+  ],
+  "tools": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Vercel",
+    "Sanity or MDX"
+  ],
+  "process": [
+    {
+      "title": "Discover",
+      "detail": "Goals, audience, competitors and the actions the site must drive."
+    },
+    {
+      "title": "Design",
+      "detail": "Structure, wireframes and visual design, approved page by page."
+    },
+    {
+      "title": "Build",
+      "detail": "Development on a staging link you can review at any time."
+    },
+    {
+      "title": "Launch",
+      "detail": "Redirects, tracking, speed checks, then go-live and a 30-day support window."
+    }
+  ],
+  "timeline": "4 to 8 weeks for most business websites.",
+  "priceFrom": "[PLACEHOLDER: starting price for custom websites]",
+  "faqs": [
+    {
+      "question": "Why Next.js instead of WordPress?",
+      "answer": "Next.js sites are faster, more secure and more flexible for custom features. WordPress is easier if you want a large plugin ecosystem and to edit everything yourself. We build both and recommend based on your needs."
+    },
+    {
+      "question": "Can we edit the content ourselves?",
+      "answer": "Yes. We set up the editing method that fits your team, from simple files to a full CMS."
+    },
+    {
+      "question": "Will we lose our Google rankings when we switch?",
+      "answer": "Not if the migration is done properly. We map every old URL to its new one with redirects and keep what's already ranking."
+    }
+  ],
+  "seo": {
+    "title": "Custom website development | HTH (Hub to Hub)",
+    "description": "Fast, custom websites in Next.js and React, built to rank and to send every lead into your CRM."
+  }
+}

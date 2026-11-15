@@ -1,0 +1,90 @@
+{
+  "slug": "landing-pages-funnels",
+  "hub": "web-commerce",
+  "order": 4,
+  "name": "Landing pages and funnels",
+  "summary": "Focused landing pages and multi-step funnels for ads, launches and lead generation.",
+  "answer": "A landing page is a single page built for one goal, such as booking a call or claiming an offer, and a funnel is a sequence of pages and messages that leads someone toward that goal. HTH builds landing pages and funnels in GoHighLevel, Next.js or your existing platform, wired to your CRM and ad tracking. They're for businesses running paid campaigns that need more of their clicks to become leads.",
+  "whoFor": [
+    "Businesses running Meta or Google ads to their homepage",
+    "Clinics and service businesses promoting specific offers",
+    "Coaches and consultants booking calls from ads",
+    "Agencies that need landing pages built quickly for clients"
+  ],
+  "problem": {
+    "heading": "Ads send clicks to pages that weren't built to convert.",
+    "body": "Traffic lands on a general homepage with ten options and no clear next step. You pay for the click, they leave, and there's no follow-up because they never left their details."
+  },
+  "deliverables": [
+    {
+      "title": "Offer and copy",
+      "detail": "One clear offer, written to match the ad that sent them."
+    },
+    {
+      "title": "Page build",
+      "detail": "Fast, mobile-first pages in GoHighLevel, Next.js or your platform."
+    },
+    {
+      "title": "Funnel steps",
+      "detail": "Opt-in, booking, thank-you and confirmation pages with the right next step on each."
+    },
+    {
+      "title": "Tracking",
+      "detail": "Pixels, conversion events and UTM capture so every lead is tied to its campaign."
+    },
+    {
+      "title": "Follow-up",
+      "detail": "Instant reply and a follow-up sequence for anyone who doesn't book."
+    },
+    {
+      "title": "A/B tests",
+      "detail": "Headline and offer tests once there's enough traffic to read the result."
+    }
+  ],
+  "tools": [
+    "GoHighLevel funnels",
+    "Next.js",
+    "Unbounce",
+    "Meta Pixel and CAPI",
+    "Google Tag Manager",
+    "Hotjar"
+  ],
+  "process": [
+    {
+      "title": "Offer",
+      "detail": "We agree the audience, the offer and the single action the page should drive."
+    },
+    {
+      "title": "Write and design",
+      "detail": "Copy first, then design around it."
+    },
+    {
+      "title": "Build and track",
+      "detail": "Pages, forms, tracking and CRM connection, tested end to end."
+    },
+    {
+      "title": "Test and improve",
+      "detail": "We watch conversion data and run tests on the biggest levers."
+    }
+  ],
+  "timeline": "1 to 2 weeks for a landing page, 2 to 4 weeks for a full funnel.",
+  "priceFrom": "[PLACEHOLDER: starting price for landing pages and funnels]",
+  "faqs": [
+    {
+      "question": "Should landing pages be on our main domain?",
+      "answer": "Usually on a subdomain or a path of your main domain, so it builds trust and keeps tracking simple. We set it up either way."
+    },
+    {
+      "question": "Do you write the copy?",
+      "answer": "Yes. Copy is part of the work, because the words matter more than the layout on a landing page."
+    },
+    {
+      "question": "How many pages does a funnel need?",
+      "answer": "As few as possible. Most lead funnels are an opt-in or booking page and a confirmation page, plus follow-up messages."
+    }
+  ],
+  "seo": {
+    "title": "Landing pages and funnels | HTH (Hub to Hub)",
+    "description": "Focused landing pages and multi-step funnels for ads, launches and lead generation."
+  }
+}

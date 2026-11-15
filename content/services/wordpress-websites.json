@@ -1,0 +1,86 @@
+{
+  "slug": "wordpress-websites",
+  "hub": "web-commerce",
+  "order": 2,
+  "name": "WordPress websites",
+  "summary": "Clean, fast WordPress sites your team can edit, without the plugin bloat.",
+  "answer": "A WordPress website is a site built on the world's most widely used content management system, which makes it easy for your team to edit pages and publish posts. HTH builds lean WordPress sites with a custom theme or a block-based build, minimal plugins, fast hosting and forms connected to your CRM. It's for businesses that want full control over their content without sacrificing speed.",
+  "whoFor": [
+    "Teams that publish content often and want to do it themselves",
+    "Businesses with an existing WordPress site that's slow or broken",
+    "Companies that need a familiar, widely supported platform",
+    "Agencies needing white-label WordPress builds"
+  ],
+  "problem": {
+    "heading": "WordPress got slow, fragile and hard to update.",
+    "body": "Years of plugins, a heavy page builder and an old theme mean every update risks breaking something. The site is slow on mobile and nobody wants to touch it."
+  },
+  "deliverables": [
+    {
+      "title": "Theme build",
+      "detail": "A lightweight custom or block theme, without bloated page builders."
+    },
+    {
+      "title": "Editing setup",
+      "detail": "Reusable blocks and patterns so your team can build pages without breaking the design."
+    },
+    {
+      "title": "Performance",
+      "detail": "Caching, image optimisation and good hosting to keep Core Web Vitals green."
+    },
+    {
+      "title": "Security and backups",
+      "detail": "Updates, hardening and automatic backups configured from day one."
+    },
+    {
+      "title": "CRM-connected forms",
+      "detail": "Forms and bookings that send leads straight into your CRM."
+    }
+  ],
+  "tools": [
+    "WordPress",
+    "Gutenberg blocks",
+    "Advanced Custom Fields",
+    "WP Engine or Cloudways",
+    "Cloudflare",
+    "GoHighLevel forms"
+  ],
+  "process": [
+    {
+      "title": "Plan",
+      "detail": "Pages, content types and what your team needs to edit."
+    },
+    {
+      "title": "Design",
+      "detail": "Visual design approved before build."
+    },
+    {
+      "title": "Build",
+      "detail": "Theme, blocks and content on a staging site."
+    },
+    {
+      "title": "Launch and train",
+      "detail": "Go-live, redirects, and a recorded editing walkthrough for your team."
+    }
+  ],
+  "timeline": "3 to 6 weeks.",
+  "priceFrom": "[PLACEHOLDER: starting price for WordPress websites]",
+  "faqs": [
+    {
+      "question": "Do you use Elementor or Divi?",
+      "answer": "We prefer native blocks for speed and long-term stability, but can work in an existing Elementor site if a rebuild isn't practical."
+    },
+    {
+      "question": "Can you speed up our current WordPress site?",
+      "answer": "Often, yes. We start with a performance audit and fix the biggest issues: hosting, images, plugins and caching."
+    },
+    {
+      "question": "Do you offer maintenance?",
+      "answer": "Yes, a monthly plan covering updates, backups, uptime monitoring and small changes."
+    }
+  ],
+  "seo": {
+    "title": "WordPress websites | HTH (Hub to Hub)",
+    "description": "Clean, fast WordPress sites your team can edit, without the plugin bloat."
+  }
+}

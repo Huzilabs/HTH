@@ -1,0 +1,90 @@
+{
+  "slug": "lead-capture-follow-up",
+  "hub": "crm-automation",
+  "order": 3,
+  "name": "Lead capture and follow-up systems",
+  "summary": "Instant replies, missed-call text back, nurture sequences and reporting so no lead goes cold.",
+  "answer": "A lead capture and follow-up system makes sure every enquiry gets an instant reply and keeps getting followed up until it books or says no. HTH builds these in your CRM with forms, missed-call text back, SMS, WhatsApp and email sequences, plus a dashboard that shows response times and conversions. It's for businesses that pay for leads and lose too many of them to slow replies.",
+  "whoFor": [
+    "Businesses running ads whose team can't reply to every lead quickly",
+    "Trades and local services who miss calls while on a job",
+    "Clinics and medspas with high no-show rates",
+    "Sales teams who give up after one or two follow-ups"
+  ],
+  "problem": {
+    "heading": "You're paying for leads and losing them to slow replies.",
+    "body": "The lead fills a form at 9pm. Someone calls back the next afternoon. By then they've booked with whoever answered first. The leads that don't book on the first call get one more try, then they're forgotten in the CRM."
+  },
+  "deliverables": [
+    {
+      "title": "Capture points",
+      "detail": "Forms, chat widgets, calendars and lead ads connected so every enquiry lands in the CRM."
+    },
+    {
+      "title": "Speed-to-lead",
+      "detail": "An instant SMS, WhatsApp or email reply, and a task or call alert for your team."
+    },
+    {
+      "title": "Missed-call text back",
+      "detail": "A text sent automatically when you can't pick up, so the conversation carries on."
+    },
+    {
+      "title": "Follow-up sequences",
+      "detail": "Multi-day nurture across SMS, WhatsApp and email that stops the moment they reply or book."
+    },
+    {
+      "title": "Reminders and no-show recovery",
+      "detail": "Appointment reminders and an automatic rebooking flow for no-shows."
+    },
+    {
+      "title": "Reporting",
+      "detail": "A dashboard for response time, booking rate and revenue by lead source."
+    }
+  ],
+  "tools": [
+    "GoHighLevel",
+    "HubSpot",
+    "Twilio",
+    "WhatsApp Business API",
+    "Meta Lead Ads",
+    "Google Ads lead forms"
+  ],
+  "process": [
+    {
+      "title": "Trace",
+      "detail": "We follow a test lead from every source and time how long each step takes today."
+    },
+    {
+      "title": "Design",
+      "detail": "We write the messages and the sequence with you, in your tone, for each lead type."
+    },
+    {
+      "title": "Build",
+      "detail": "We build the capture, replies, sequences and alerts, and test every path."
+    },
+    {
+      "title": "Measure",
+      "detail": "After 30 days we review response time and booking rate and tune what's underperforming."
+    }
+  ],
+  "timeline": "1 to 3 weeks depending on the number of lead sources.",
+  "priceFrom": "[PLACEHOLDER: starting price for lead follow-up systems]",
+  "faqs": [
+    {
+      "question": "Will automated messages feel robotic?",
+      "answer": "Not if they're written properly. We write in your voice, keep messages short and personal, and stop automation as soon as a person replies."
+    },
+    {
+      "question": "Does missed-call text back work in Pakistan and the Gulf?",
+      "answer": "Yes, through WhatsApp or SMS depending on the country and your number provider. We confirm what's possible for your number during the audit."
+    },
+    {
+      "question": "Can it hand leads to different team members?",
+      "answer": "Yes. Leads can be assigned by area, service, language or round-robin, with alerts to the right person."
+    }
+  ],
+  "seo": {
+    "title": "Lead capture and follow-up systems | HTH (Hub to Hub)",
+    "description": "Instant replies, missed-call text back, nurture sequences and reporting so no lead goes cold."
+  }
+}
