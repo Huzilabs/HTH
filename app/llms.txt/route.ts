@@ -29,7 +29,6 @@ export async function GET() {
   lines.push("## Key pages", "");
   lines.push(`- [Services overview](${absoluteUrl("/services")}): all four hubs and every service`);
   lines.push(`- [Work](${absoluteUrl("/work")}): case studies with problem, build, stack and result`);
-  lines.push(`- [Pricing](${absoluteUrl("/pricing")}): starting prices per hub and custom quotes`);
   lines.push(`- [About](${absoluteUrl("/about")}): the Hub to Hub idea and how we work remotely`);
   lines.push(`- [Contact](${absoluteUrl("/contact")}): project brief form, booking calendar, WhatsApp and email`);
   lines.push("");

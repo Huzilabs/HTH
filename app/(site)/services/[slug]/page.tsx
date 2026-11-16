@@ -63,8 +63,8 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
               <ButtonLink href={site.primaryCta.href} arrow>
                 {site.primaryCta.label}
               </ButtonLink>
-              <ButtonLink href="/pricing" variant="secondary">
-                See pricing
+              <ButtonLink href={`/work?hub=${hub.slug}`} variant="secondary">
+                See related work
               </ButtonLink>
             </div>
           </div>
@@ -72,10 +72,6 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
             <div className="bg-ground p-5">
               <dt className="label text-subtle">Typical timeline</dt>
               <dd className="mt-2 text-ink">{service.timeline}</dd>
-            </div>
-            <div className="bg-ground p-5">
-              <dt className="label text-subtle">Starting from</dt>
-              <dd className="mt-2 font-mono text-sm text-subtle">{service.priceFrom}</dd>
             </div>
           </dl>
         </div>

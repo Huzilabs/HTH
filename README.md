@@ -54,7 +54,7 @@ app/
     page.tsx                 Home
     services/                overview + [slug] (one template for every service)
     work/                    case study index (hub filter) + [slug]
-    about/ pricing/ contact/ insights/ (+ [slug] for MDX posts)
+    about/ contact/ insights/ (+ [slug] for MDX posts)
     **/opengraph-image.tsx   brand-style OG images (next/og)
   api/contact/route.ts       validates and forwards the form to GHL
   brand/                     internal brand directions page (noindex, not in nav)
@@ -68,7 +68,7 @@ assets/fonts/                font files used to draw OG images
 
 ## Editing content
 
-Everything below lives in `/content`. Search the codebase for `[PLACEHOLDER` to find every marker waiting for real information (prices, numbers, client names, social URLs, the WhatsApp number, response times).
+Everything below lives in `/content`. Search the codebase for `[PLACEHOLDER` to find every marker waiting for real information (numbers, client names, social URLs, the WhatsApp number, response times).
 
 | File | Controls |
 | --- | --- |
@@ -79,7 +79,7 @@ Everything below lives in `/content`. Search the codebase for `[PLACEHOLDER` to 
 | `case-studies/*.json` | One file per case study |
 | `testimonials.json` | Testimonials |
 | `insights/*.mdx` | Blog posts |
-| `pricing.json`, `about.json`, `contact.json`, `faqs.json`, `pages.json` | Those pages, plus intro text for Services, Work, Insights and the 404 page |
+| `about.json`, `contact.json`, `faqs.json`, `pages.json` | Those pages, plus intro text for Services, Work, Insights and the 404 page |
 
 **WhatsApp:** set `whatsapp.number` in `content/site.json` to digits only, with country code (e.g. `923001234567`). The footer and Contact page then show a working `wa.me` click-to-chat link.
 
@@ -90,7 +90,7 @@ Everything below lives in `/content`. Search the codebase for `[PLACEHOLDER` to 
 1. Copy any file in `content/services/` to `content/services/<new-slug>.json`.
 2. Set `slug` (it must match the filename), `hub` (`crm-automation`, `ai`, `web-commerce` or `growth`) and `order` (its position within the hub).
 3. Write `answer` as two or three plain sentences: what it is, who it's for, and what HTH does. It opens the page and is what AI engines quote.
-4. Fill in `whoFor`, `problem`, `deliverables`, `tools`, `process` (4 steps), `timeline`, `priceFrom`, `faqs` and `seo`.
+4. Fill in `whoFor`, `problem`, `deliverables`, `tools`, `process` (4 steps), `timeline`, `faqs` and `seo`.
 
 The page, the Services overview, the footer, the contact form's service options, the sitemap, `llms.txt` and the Service + FAQPage JSON-LD all pick it up automatically.
 
@@ -161,7 +161,6 @@ Brand direction **B, "Network"** (compare all three at `/brand`). Tokens live in
   - Service, FAQPage and BreadcrumbList on service pages
   - CreativeWork on case studies
   - Article on posts
-  - FAQPage on Pricing
   - BreadcrumbList on every inner page
 - `/sitemap.xml`, `/robots.txt`. AI crawlers are allowed; only `/api/` and `/brand` are excluded.
 - `/llms.txt` summarises HTH, every service (using its direct answer), key pages, case studies, posts, FAQs and the contact email. It's generated from `/content`, so it stays current.

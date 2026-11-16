@@ -26,7 +26,6 @@ export type Service = {
   tools: string[];
   process: Step[];
   timeline: string;
-  priceFrom: string;
   faqs: Faq[];
   seo: { title: string; description: string };
 };

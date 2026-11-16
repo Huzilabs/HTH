@@ -9,7 +9,6 @@ import faqsJson from "@/content/faqs.json";
 import homeJson from "@/content/home.json";
 import hubsJson from "@/content/hubs.json";
 import pagesJson from "@/content/pages.json";
-import pricingJson from "@/content/pricing.json";
 import siteJson from "@/content/site.json";
 import testimonialsJson from "@/content/testimonials.json";
 import type { CaseStudy, Hub, HubSlug, PostMeta, Service, Testimonial } from "./types";
@@ -21,7 +20,6 @@ export const home = homeJson;
 export const about = aboutJson;
 export const contact = contactJson;
 export const faqs = faqsJson;
-export const pricing = pricingJson;
 export const pages = pagesJson;
 export const hubs = hubsJson as Hub[];
 
