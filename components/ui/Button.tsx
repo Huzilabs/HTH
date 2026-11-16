@@ -4,7 +4,7 @@ import type { ComponentProps, ReactNode } from "react";
 type Variant = "primary" | "secondary" | "text";
 
 const base =
-  "inline-flex items-center justify-center gap-2 transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-60";
+  "group inline-flex items-center justify-center gap-2 transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-60";
 
 const variants: Record<Variant, string> = {
   primary:
@@ -33,7 +33,7 @@ export function ButtonLink({ variant = "primary", arrow, className = "", childre
   return (
     <Link className={`${base} ${variants[variant]} ${className}`} {...rest}>
       {children}
-      {arrow && <Arrow />}
+      {arrow && <Arrow className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />}
     </Link>
   );
 }

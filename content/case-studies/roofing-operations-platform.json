@@ -1,0 +1,148 @@
+{
+  "slug": "roofing-operations-platform",
+  "order": 1,
+  "title": "One record for every roofing lead, from first click to paid job",
+  "shortTitle": "Roofing Operations Platform",
+  "client": "Roofing contractor (name withheld)",
+  "industry": "Roofing and home services",
+  "region": "United States",
+  "service": "Workflow automation + AI agents",
+  "scope": "13 systems built · 8 tools",
+  "hubs": [
+    "crm-automation",
+    "ai"
+  ],
+  "summary": "We made JobNimbus the single source of truth for a US roofing company and connected GoHighLevel, SalesRabbit and an operations app to it, with instant follow-up and AI booking agents on every lead page.",
+  "problem": "Appointments, bookings and follow-up texts lived in separate apps. Leads from canvassing, a retail partner, paid campaigns, phone, TV and the website were entered by hand, the same customer often existed twice, and month-end numbers were pieced together from spreadsheets. Nobody could say which channel actually produced booked inspections.",
+  "overviewHeading": "Every system, in sync.",
+  "overview": "The platform follows a roofing lead from the moment it comes in to the moment the job is paid, and keeps one record of it the whole way. JobNimbus holds the truth; GoHighLevel handles every text, call and booking; SalesRabbit handles canvassing; and the operations app shows the numbers.",
+  "built": [
+    {
+      "title": "One source of truth",
+      "detail": "Every lead, from canvassing, the retail partner, paid campaigns, phone and TV or the website, lands as a job in JobNimbus. GoHighLevel and the operations app read from it within moments."
+    },
+    {
+      "title": "A connector that never guesses",
+      "detail": "It never creates the same customer twice, retries when a system is briefly down, and sends anything missing or contradictory to a review list. A nightly check reports anything that drifts out of step."
+    },
+    {
+      "title": "One sync for six boards",
+      "detail": "A single JobNimbus to GoHighLevel workflow with one shared stage map covers roof restoration, replacement, canvassing, retail partner, attic fans and gutters."
+    },
+    {
+      "title": "Two-way CRM sync",
+      "detail": "Cards moved in GoHighLevel update JobNimbus too, with a safeguard that stops the two systems bouncing the same change back and forth."
+    },
+    {
+      "title": "Canvasser credit without extra seats",
+      "detail": "Canvassers pick their name in SalesRabbit when they book, and it arrives in JobNimbus already filled in, so commission goes to the right person."
+    },
+    {
+      "title": "Weekly retail partner import",
+      "detail": "An upload screen that checks every row of the weekly spreadsheet, explains each problem, previews before saving and spots repeats by phone, address and date."
+    },
+    {
+      "title": "Instant lead follow-up",
+      "detail": "The first text goes out the moment a lead arrives, at any hour, and an AI call follows within a minute. A ten-day chase steps down to weekly and stops when the customer books, replies or says no."
+    },
+    {
+      "title": "AI booking agents",
+      "detail": "A voice agent and a text assistant for each lead page. They confirm the homeowner, offer two times, collect what the technician needs, and never quote a price or claim a booking that isn't in the calendar."
+    },
+    {
+      "title": "Real calendar booking",
+      "detail": "Slots are held the moment they're offered, written to the inspections calendar and confirmed by text, with instant office alerts when a booking is made, moved or cancelled."
+    },
+    {
+      "title": "Three lead pages",
+      "detail": "Attic Health, Gutter Solutions and the Roofing Portal, each with its own form and its own board in JobNimbus and GoHighLevel."
+    },
+    {
+      "title": "The operations app",
+      "detail": "Roof sizes, sale values, who set and closed each job, a commission preview and a landing pages dashboard built around one number: booking rate."
+    },
+    {
+      "title": "Sales dashboard",
+      "detail": "Speed to lead, outreach mix, appointments, pipeline by stage and performance by service line, in one view."
+    },
+    {
+      "title": "Data recovered from old jobs",
+      "detail": "A look back through old jobs found sale values on 167 jobs and roof sizes on 104 that no report had ever read."
+    }
+  ],
+  "stack": [
+    "JobNimbus",
+    "GoHighLevel",
+    "SalesRabbit",
+    "Base44",
+    "Supabase",
+    "n8n",
+    "Google Calendar",
+    "AI voice agents"
+  ],
+  "results": [
+    {
+      "value": "167",
+      "label": "Old jobs with sale values recovered"
+    },
+    {
+      "value": "104",
+      "label": "Old jobs with roof sizes recovered"
+    },
+    {
+      "value": "< 1 min",
+      "label": "From new lead to first text and AI call"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/work/roofing-sales-dashboard.jpg",
+      "width": 1600,
+      "height": 936,
+      "label": "Sales dashboard: leads, replies, appointments and speed to lead, with the AI agent included.",
+      "alt": "Roofing sales dashboard with new leads, contacted, replied, appointments, deals won, speed to lead and outreach mix",
+      "group": "Dashboards"
+    },
+    {
+      "src": "/work/roofing-pipeline.jpg",
+      "width": 1600,
+      "height": 969,
+      "label": "Pipeline by stage, outreach trend and results by service line.",
+      "alt": "Pipeline by stage, outreach trend and service line performance for roof restoration, replacement, gutters, solar attic fans and call backs",
+      "group": "Dashboards"
+    },
+    {
+      "src": "/work/roofing-app-home.jpg",
+      "width": 1600,
+      "height": 1015,
+      "label": "The operations app: one overview across retail, canvassing and paid marketing.",
+      "alt": "Operations app overview with appointments, jobs sold, revenue and lead channels",
+      "group": "Dashboards"
+    },
+    {
+      "src": "/work/roofing-landing-dashboard.jpg",
+      "width": 1600,
+      "height": 861,
+      "label": "Landing pages dashboard: leads, reached, booked and booking rate per page.",
+      "alt": "Roofing landing pages dashboard comparing leads, reached, booked, booking rate and sold value per product",
+      "group": "Dashboards"
+    },
+    {
+      "src": "/work/roofing-sync-workflow.jpg",
+      "width": 1600,
+      "height": 997,
+      "label": "One workflow maps every JobNimbus board and status to the matching GoHighLevel stage.",
+      "alt": "GoHighLevel workflow mapping every JobNimbus board and status to the matching GoHighLevel pipeline stage",
+      "group": "Automations and pages"
+    },
+    {
+      "src": "/work/roofing-lead-pages.jpg",
+      "width": 1600,
+      "height": 780,
+      "label": "The three lead pages: Attic Health, Roofing Portal and Gutter Solutions.",
+      "alt": "The three lead capture pages: Attic Health, Roofing Portal and Gutter Solutions",
+      "group": "Automations and pages"
+    }
+  ],
+  "privacyNote": null
+}

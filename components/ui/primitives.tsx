@@ -41,7 +41,7 @@ export function SectionHeading({
   aside?: ReactNode;
 }) {
   return (
-    <div className="grid gap-6 md:grid-cols-12 md:items-end">
+    <div className="reveal grid gap-6 md:grid-cols-12 md:items-end">
       <div className="md:col-span-8">
         {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
         <h2 id={id} className="display mt-4 max-w-[20ch] text-h2 text-balance">

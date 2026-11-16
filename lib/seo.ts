@@ -123,6 +123,7 @@ export function caseStudyLd(c: CaseStudy) {
     creator: { "@id": ORG_ID },
     about: c.industry,
     keywords: c.stack.join(", "),
+    ...(c.screenshots[0]?.src ? { image: absoluteUrl(c.screenshots[0].src) } : {}),
   };
 }
 

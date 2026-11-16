@@ -81,7 +81,7 @@ export function Testimonials({
     return (
       <div className="grid gap-4 md:grid-cols-2">
         {items.slice(0, 2).map((t) => (
-          <figure key={t.id} className="flex flex-col gap-6 rounded-md border border-line p-6">
+          <figure key={t.id} className="reveal flex flex-col gap-6 rounded-md border border-line p-6">
             <div className="flex items-start justify-between gap-4">
               {t.result ? <p className="font-semibold text-accent">{t.result}</p> : <span />}
               <SampleTag t={t} />
@@ -121,7 +121,7 @@ export function Testimonials({
         </div>
       </figure>
       {rest.map((t) => (
-        <figure key={t.id} className="flex flex-col gap-6 bg-ground p-6 lg:col-span-5 [&:nth-child(n+4)]:lg:col-span-4">
+        <figure key={t.id} className="reveal flex flex-col gap-6 bg-ground p-6 lg:col-span-5 [&:nth-child(n+4)]:lg:col-span-4">
           <div className="flex items-start justify-between gap-4">
             {t.result ? <p className="text-sm font-semibold text-accent">{t.result}</p> : <span />}
             <SampleTag t={t} />

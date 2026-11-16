@@ -3,7 +3,9 @@
  * One ground, one ink, one accent. Every other colour is a fixed mix of those three.
  * Tailwind's default palette, fonts and radii are reset, so components can only use these.
  *
- * Contrast (WCAG 2.x) on --color-ground:
+ * Dark theme is the default; [data-theme="light"] on <html> switches to the light palette.
+ *
+ * Dark contrast (WCAG 2.x) on --color-ground:
  *   ink 15.3:1 · muted 9.6:1 · subtle 7.1:1 · accent 9.6:1 · line-strong 3.4:1 (UI boundaries)
  *   ground text on accent 9.6:1
  */
@@ -13,17 +15,17 @@
   --color-transparent: transparent;
   --color-current: currentColor;
 
-  /* Core three */
-  --color-ground: #0f1315; /* Graphite */
-  --color-ink: #e6eae3; /* Chalk */
-  --color-accent: #e3b34a; /* Signal amber */
+  /* Colours resolve through --c-* so the light theme can swap them (see bottom of file). */
+  --color-ground: var(--c-ground); /* Graphite / Paper */
+  --color-ink: var(--c-ink); /* Chalk / Carbon */
+  --color-accent: var(--c-accent); /* Signal amber */
 
   /* Derived (fixed mixes of ink over ground) */
-  --color-muted: #b7bbb6; /* ink 78%: secondary text */
-  --color-subtle: #9da19d; /* ink 66%: labels, captions */
-  --color-line-strong: #696d6c; /* ink 42%: input borders, focusable boundaries */
-  --color-line: #313536; /* ink 16%: hairlines, card borders */
-  --color-raised: #1a1e1f; /* ink 5%: raised surfaces, placeholders */
+  --color-muted: var(--c-muted); /* secondary text */
+  --color-subtle: var(--c-subtle); /* labels, captions */
+  --color-line-strong: var(--c-line-strong); /* input borders, focusable boundaries */
+  --color-line: var(--c-line); /* hairlines, card borders */
+  --color-raised: var(--c-raised); /* raised surfaces, placeholders */
 
   /* Radii */
   --radius-*: initial;
@@ -73,8 +75,34 @@
   --font-mono: var(--font-jetbrains), ui-monospace, monospace;
 }
 
-:root {
+:root,
+:root[data-theme="dark"] {
   color-scheme: dark;
+  --c-ground: #0f1315;
+  --c-ink: #e6eae3;
+  --c-accent: #e3b34a;
+  --c-muted: #b7bbb6; /* ink 78% */
+  --c-subtle: #9da19d; /* ink 66% */
+  --c-line-strong: #696d6c; /* ink 42% */
+  --c-line: #313536; /* ink 16% */
+  --c-raised: #1a1e1f; /* ink 5% */
   --focus-ring: var(--color-accent);
   --display-stretch: 86%;
+}
+
+/*
+ * Light theme ("Paper"). Same three-colour system; the amber is deepened so it passes AA as text
+ * and as a button fill. Contrast on --c-ground: ink 16.9:1 · muted 8.4:1 · subtle 5.9:1 ·
+ * accent 5.2:1 · line-strong 3.3:1 · ground text on accent 5.2:1
+ */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --c-ground: #f5f4ef;
+  --c-ink: #14181a;
+  --c-accent: #8f5b00;
+  --c-muted: #464849;
+  --c-subtle: #5c5e5e;
+  --c-line-strong: #858685;
+  --c-line: #d6d5d1;
+  --c-raised: #ecebe6;
 }

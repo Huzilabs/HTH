@@ -31,12 +31,23 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#0f1315",
-  colorScheme: "dark",
+  colorScheme: "dark light",
 };
+
+/** Runs before first paint: saved choice, else the OS preference, else dark. Prevents a theme flash. */
+const themeScript = `(function(){try{var t=localStorage.getItem("hth-theme");if(t!=="light"&&t!=="dark"){t=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"}document.documentElement.dataset.theme=t;if(t==="light"){var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content","#f5f4ef")}}catch(e){}})();`;
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${archivo.variable} ${jetbrains.variable} antialiased`}>
+    <html
+      lang="en"
+      data-theme="dark"
+      suppressHydrationWarning
+      className={`${archivo.variable} ${jetbrains.variable} antialiased`}
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="flex min-h-dvh flex-col">
         <a
           href="#main"

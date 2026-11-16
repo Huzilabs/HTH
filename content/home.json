@@ -7,14 +7,52 @@
     "eyebrow": "Digital growth and automation agency",
     "headline": "One system for every part of your business.",
     "sub": "HTH connects your website, CRM, ads, chat and calls, so every lead is answered in seconds and followed up until it becomes a sale.",
-    "secondaryCta": { "label": "See our work", "href": "/work" }
+    "secondaryCta": {
+      "label": "See our work",
+      "href": "/work"
+    }
   },
   "proof": [
-    { "value": "[PLACEHOLDER: number]", "label": "Systems built and running" },
-    { "value": "[PLACEHOLDER: number]", "label": "Leads routed through client CRMs" },
-    { "value": "[PLACEHOLDER: time]", "label": "Average lead response time" },
-    { "value": "4 regions", "label": "Pakistan, US, UK and Gulf" }
+    {
+      "value": "[PLACEHOLDER: number]",
+      "label": "Systems built and running"
+    },
+    {
+      "value": "[PLACEHOLDER: number]",
+      "label": "Leads routed through client CRMs"
+    },
+    {
+      "value": "[PLACEHOLDER: time]",
+      "label": "Average lead response time"
+    },
+    {
+      "value": "4 regions",
+      "label": "Pakistan, US, UK and Gulf"
+    }
   ],
+  "tools": {
+    "label": "Built with the tools you already use",
+    "items": [
+      "GoHighLevel",
+      "HubSpot",
+      "Zoho",
+      "n8n",
+      "Make.com",
+      "Zapier",
+      "Vapi",
+      "Retell",
+      "OpenAI",
+      "Claude",
+      "Supabase",
+      "Twilio",
+      "Stripe",
+      "Slack",
+      "Shopify",
+      "WordPress",
+      "Next.js",
+      "Vercel"
+    ]
+  },
   "hubsSection": {
     "eyebrow": "Four hubs",
     "heading": "Everything you need to win a customer, in one place.",
@@ -25,18 +63,40 @@
     "heading": "From first click to closed sale, without anyone dropping the ball.",
     "intro": "This is the route a lead takes through a system we build. Every step is automatic, logged in your CRM, and handed to a person when it should be.",
     "steps": [
-      { "name": "Website", "detail": "A fast page or store captures the enquiry with its source: which ad, which keyword, which post." },
-      { "name": "CRM", "detail": "The lead lands in the right pipeline, gets tagged and assigned, and the clock starts." },
-      { "name": "AI agent", "detail": "A voice or chat agent replies within seconds, answers questions, qualifies and books." },
-      { "name": "Follow-up", "detail": "Reminders, no-show recovery and nurture run on WhatsApp, SMS and email until they reply." },
-      { "name": "Sale", "detail": "Your team closes, and the report shows which channel paid for it." }
+      {
+        "name": "Website",
+        "detail": "A fast page or store captures the enquiry with its source: which ad, which keyword, which post."
+      },
+      {
+        "name": "CRM",
+        "detail": "The lead lands in the right pipeline, gets tagged and assigned, and the clock starts."
+      },
+      {
+        "name": "AI agent",
+        "detail": "A voice or chat agent replies within seconds, answers questions, qualifies and books."
+      },
+      {
+        "name": "Follow-up",
+        "detail": "Reminders, no-show recovery and nurture run on WhatsApp, SMS and email until they reply."
+      },
+      {
+        "name": "Sale",
+        "detail": "Your team closes, and the report shows which channel paid for it."
+      }
     ],
-    "feeders": ["Meta and Google ads", "WhatsApp and Instagram", "Missed calls"]
+    "feeders": [
+      "Meta and Google ads",
+      "WhatsApp and Instagram",
+      "Missed calls"
+    ]
   },
   "workSection": {
     "eyebrow": "Selected work",
     "heading": "Systems we've built and what changed.",
-    "cta": { "label": "All case studies", "href": "/work" }
+    "cta": {
+      "label": "All case studies",
+      "href": "/work"
+    }
   },
   "testimonialsSection": {
     "eyebrow": "Clients",
@@ -46,21 +106,48 @@
     "eyebrow": "How we work",
     "heading": "Four steps, the same every time.",
     "steps": [
-      { "title": "Map", "detail": "A call and a short audit of your current tools, lead sources and where leads go cold. You get a written map of the system before we quote." },
-      { "title": "Build", "detail": "We build in your accounts, not ours. Weekly Loom updates and a shared board so you always know what's done." },
-      { "title": "Connect", "detail": "We wire the hubs together, test every route with real data, and train your team on what changes for them." },
-      { "title": "Run", "detail": "We monitor, fix and improve on a monthly plan, or hand it over with documentation if you'd rather run it yourself." }
+      {
+        "title": "Map",
+        "detail": "A call and a short audit of your current tools, lead sources and where leads go cold. You get a written map of the system before we quote."
+      },
+      {
+        "title": "Build",
+        "detail": "We build in your accounts, not ours. Weekly Loom updates and a shared board so you always know what's done."
+      },
+      {
+        "title": "Connect",
+        "detail": "We wire the hubs together, test every route with real data, and train your team on what changes for them."
+      },
+      {
+        "title": "Run",
+        "detail": "We monitor, fix and improve on a monthly plan, or hand it over with documentation if you'd rather run it yourself."
+      }
     ]
   },
   "industries": {
     "eyebrow": "Industries",
     "heading": "Built for businesses where speed to lead decides the sale.",
     "items": [
-      { "name": "Real estate", "detail": "Portal and ad leads answered instantly, viewings booked, agents assigned by area." },
-      { "name": "Clinics and medspas", "detail": "WhatsApp and Instagram enquiries turned into booked consults, with reminders that cut no-shows." },
-      { "name": "Ecommerce", "detail": "Shopify stores with COD confirmation, abandoned cart recovery and ads measured on real orders." },
-      { "name": "Law firms", "detail": "Intake that qualifies by practice area, books consultations and keeps every message on file." },
-      { "name": "Local services", "detail": "Missed-call text back, quote follow-up and review requests for trades and home services." }
+      {
+        "name": "Real estate",
+        "detail": "Portal and ad leads answered instantly, viewings booked, agents assigned by area."
+      },
+      {
+        "name": "Clinics and medspas",
+        "detail": "WhatsApp and Instagram enquiries turned into booked consults, with reminders that cut no-shows."
+      },
+      {
+        "name": "Ecommerce",
+        "detail": "Shopify stores with COD confirmation, abandoned cart recovery and ads measured on real orders."
+      },
+      {
+        "name": "Law firms",
+        "detail": "Intake that qualifies by practice area, books consultations and keeps every message on file."
+      },
+      {
+        "name": "Local services",
+        "detail": "Missed-call text back, quote follow-up and review requests for trades and home services."
+      }
     ]
   },
   "cta": {

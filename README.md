@@ -83,7 +83,7 @@ Everything below lives in `/content`. Search the codebase for `[PLACEHOLDER` to 
 
 **WhatsApp:** set `whatsapp.number` in `content/site.json` to digits only, with country code (e.g. `923001234567`). The footer and Contact page then show a working `wa.me` click-to-chat link.
 
-**Social links:** replace each `href` in `site.json` with a full `https://` URL. Placeholder text isn't linked, and real URLs are also added to the Organization JSON-LD `sameAs`.
+**Social links:** `socials` in `site.json` is empty, so the footer's Follow column is hidden. Add `{ "label": "LinkedIn", "href": "https://..." }` entries to show it; real URLs are also added to the Organization JSON-LD `sameAs`.
 
 ### Add a service
 
@@ -98,8 +98,9 @@ The page, the Services overview, the footer, the contact form's service options,
 
 1. Copy `content/case-studies/real-estate-speed-to-lead.json` to `content/case-studies/<slug>.json`.
 2. Fill in `title`, `client`, `industry`, `region`, `hubs`, `summary`, `problem`, `built`, `stack` and `results`.
-3. Screenshots: put images in `public/work/<slug>/` and add `"src": "/work/<slug>/pipeline.png", "width": 1600, "height": 1000` to each entry in `screenshots`. Entries without `src` show a labelled placeholder. Always write a meaningful `alt`.
-4. Optionally link a testimonial with `testimonialId`, and set `placeholder` to `false` once it's real.
+3. Set `order` (position on Work and Home; the first three appear on Home), `shortTitle`, `service`, `scope`, `overviewHeading`, `overview` and `built` (a list of `{ "title", "detail" }`).
+4. Screenshots: put images in `public/work/` and add `"src": "/work/name.jpg", "width": 1600, "height": 1000` to each entry in `screenshots`. The first one is the cover; `group` sorts the rest under headings. Entries without `src` show a labelled placeholder. Always write a meaningful `alt`.
+5. Optionally link a testimonial with `testimonialId`, and add a `privacyNote` if screenshots are blurred.
 
 ### Add a testimonial
 
@@ -151,7 +152,8 @@ Brand direction **B, "Network"** (compare all three at `/brand`). Tokens live in
 - **Colour:** `ground` #0F1315, `ink` #E6EAE3, `accent` #E3B34A, plus fixed mixes of those (`muted`, `subtle`, `line`, `line-strong`, `raised`). Tailwind's default palette is switched off, so only these colour classes exist.
 - **Type:** Archivo (semi-condensed for headlines via the `display` utility) and JetBrains Mono (the `label` utility).
 - **Contrast:** ink 15.3:1, muted 9.6:1, subtle 7.1:1, accent 9.6:1 on ground. Every text pair passes WCAG AA.
-- **Motion:** the only motion is the "how it connects" route line drawing in on scroll. It uses CSS scroll-driven animation, not JavaScript, and is off for reduced-motion users.
+- **Light and dark:** dark is the default. The header toggle switches to the light "Paper" palette (`[data-theme="light"]` in `tokens.css`); the choice is saved in `localStorage`, and first-time visitors get their OS preference. Light contrast: ink 16.9:1, muted 8.4:1, subtle 5.9:1, accent 5.2:1.
+- **Motion:** CSS only, no animation library. Hero entrance, the route map drawing in with a "lead" travelling it, scroll reveals (`.reveal`), the tools marquee and card lift. Everything is off for reduced-motion users, and scroll reveals only run in browsers that support scroll-driven animations.
 
 ## SEO, AEO and GEO
 

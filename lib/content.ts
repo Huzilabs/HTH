@@ -15,7 +15,7 @@ import type { CaseStudy, Hub, HubSlug, PostMeta, Service, Testimonial } from "./
 
 const CONTENT = path.join(process.cwd(), "content");
 
-export const site = siteJson;
+export const site = siteJson as Omit<typeof siteJson, "socials"> & { socials: { label: string; href: string }[] };
 export const home = homeJson;
 export const about = aboutJson;
 export const contact = contactJson;
@@ -53,7 +53,7 @@ export function getServicesByHub(hub: HubSlug): Service[] {
 
 /* ---------------- Case studies ---------------- */
 export const getCaseStudies = cache((): CaseStudy[] =>
-  readJsonDir<CaseStudy>("case-studies").sort((a, b) => a.title.localeCompare(b.title)),
+  readJsonDir<CaseStudy>("case-studies").sort((a, b) => a.order - b.order),
 );
 
 export function getCaseStudy(slug: string): CaseStudy | undefined {

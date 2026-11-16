@@ -107,7 +107,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
         <SectionHeading id="deliver-h" eyebrow="What we deliver" heading={`What you get with ${service.name}.`} />
         <ul className="mt-12 grid gap-px overflow-hidden rounded-md border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
           {service.deliverables.map((d, i) => (
-            <li key={d.title} className="bg-ground p-6">
+            <li key={d.title} className="reveal bg-ground p-6">
               <span className="label text-subtle">{String(i + 1).padStart(2, "0")}</span>
               <h3 className="mt-5 text-h4 font-bold">{d.title}</h3>
               <p className="mt-2 text-sm text-muted">{d.detail}</p>

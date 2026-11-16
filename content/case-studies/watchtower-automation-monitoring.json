@@ -1,0 +1,116 @@
+{
+  "slug": "watchtower-automation-monitoring",
+  "order": 5,
+  "title": "Watchtower: one Slack alert the moment an automation breaks",
+  "shortTitle": "Watchtower",
+  "client": "In-house product",
+  "industry": "Automation operations",
+  "service": "Workflow automation + monitoring",
+  "scope": "8 parts · 6 tools",
+  "hubs": [
+    "crm-automation"
+  ],
+  "summary": "Our own monitoring product for automation stacks. It watches n8n, GoHighLevel, Supabase and Vercel, posts one Slack alert per incident, and remembers how every error was fixed.",
+  "problem": "Automations fail quietly. A broken workflow can drop leads for days before anyone notices, alerts flood channels with repeats, two people chase the same error, and the fix is forgotten by the next time it happens.",
+  "overviewHeading": "Something breaks, someone knows.",
+  "overview": "Watchtower watches n8n, GoHighLevel, Supabase and Vercel and posts a single Slack alert when something fails. Repeats update the same message, and when someone resolves an error they write one line on what fixed it, so next time the alert already has the answer. We run it on every system we look after.",
+  "built": [
+    {
+      "title": "One alert per incident",
+      "detail": "One Slack message with the workflow, the failing step and the error. Repeats update the original with a count instead of posting again."
+    },
+    {
+      "title": "Acknowledge",
+      "detail": "Whoever picks up an error taps Acknowledge and the alert shows who has it, so nobody doubles up."
+    },
+    {
+      "title": "Resolve with the fix",
+      "detail": "Resolving asks for a one-line note on what fixed it. When the same error returns, the alert shows the previous fix."
+    },
+    {
+      "title": "Open in n8n",
+      "detail": "Every alert links straight to the failed execution, so the fix starts on the exact run that broke."
+    },
+    {
+      "title": "Watches four systems",
+      "detail": "n8n errors are caught by an error workflow; GoHighLevel, Supabase and Vercel report in through a webhook, normalised into one format."
+    },
+    {
+      "title": "Supabase as memory",
+      "detail": "Decides whether an error is new or a repeat, stores the Slack message for each incident and keeps the history of fixes."
+    },
+    {
+      "title": "Buttons on Vercel",
+      "detail": "Every button press goes to a Vercel endpoint that updates Supabase and rewrites the Slack message."
+    },
+    {
+      "title": "Heartbeat collector",
+      "detail": "Every inbound event bumps a heartbeat, so silence is noticed too: a feed that stops sending is as visible as one that errors."
+    }
+  ],
+  "stack": [
+    "n8n",
+    "Slack",
+    "Supabase",
+    "Vercel",
+    "GoHighLevel",
+    "Postgres"
+  ],
+  "results": [
+    {
+      "value": "1",
+      "label": "Alert per incident, however many repeats"
+    },
+    {
+      "value": "4",
+      "label": "Systems watched from one channel"
+    },
+    {
+      "value": "Every",
+      "label": "Fix recorded and shown next time"
+    }
+  ],
+  "privacyNote": "Team member names are blurred.",
+  "screenshots": [
+    {
+      "src": "/work/watchtower-hero.jpg",
+      "width": 1600,
+      "height": 996,
+      "label": "Watchtower watches n8n, GoHighLevel, Supabase and Vercel.",
+      "alt": "Watchtower illustration: a watchtower connected to n8n, GoHighLevel, Supabase and Vercel, sending an alert card with Resolve and Open in n8n buttons",
+      "group": "In Slack"
+    },
+    {
+      "src": "/work/watchtower-alert.jpg",
+      "width": 1600,
+      "height": 352,
+      "label": "A live alert: workflow, failing step, error, who acknowledged it, and the action buttons.",
+      "alt": "Watchtower Slack alert for a failed inbound router step, with the error text, acknowledgement and Resolve and Open in n8n buttons",
+      "group": "In Slack"
+    },
+    {
+      "src": "/work/watchtower-channel.jpg",
+      "width": 1600,
+      "height": 976,
+      "label": "Resolved alerts keep the fix and the repeat count.",
+      "alt": "Watchtower Slack channel showing resolved alerts with the repeat count and the fix written by the engineer",
+      "group": "In Slack"
+    },
+    {
+      "src": "/work/watchtower-reporter.jpg",
+      "width": 1600,
+      "height": 1040,
+      "label": "Reporter workflow: normalise, record in Supabase, then update or post to Slack.",
+      "alt": "n8n Watchtower Reporter workflow: on workflow error or external report, normalise, report to Supabase, build message, then update or post to Slack",
+      "group": "Workflows"
+    },
+    {
+      "src": "/work/watchtower-heartbeat.jpg",
+      "width": 1600,
+      "height": 1040,
+      "label": "Heartbeat collector workflow.",
+      "alt": "n8n Watchtower Heartbeat Collector workflow: any inbound event, derive key, bump heartbeat in Supabase",
+      "group": "Workflows"
+    }
+  ]
+}

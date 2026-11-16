@@ -1,0 +1,40 @@
+{
+  "slug": "tour-booking-platform",
+  "order": 8,
+  "title": "A multi-vendor tour booking platform with payments built in",
+  "shortTitle": "Tour Booking Platform",
+  "client": "Travel and tours business (name withheld)",
+  "industry": "Travel and tours",
+  "service": "Web and commerce",
+  "scope": "Web platform",
+  "hubs": [
+    "web-commerce"
+  ],
+  "summary": "A booking platform that connects travellers with tours from many vendors, with availability management, payments and tools for each vendor.",
+  "problem": "Tour operators needed a trustworthy way to show availability, take payments and manage a growing network of experiences from different vendors.",
+  "overviewHeading": "Discovery to booking, in one place.",
+  "overview": "An inviting discovery experience for travellers, combined with vendor tools, availability management and a clear booking path.",
+  "built": [
+    {
+      "title": "Tour discovery",
+      "detail": "Search and browse tours with clear details, photos and availability."
+    },
+    {
+      "title": "Vendor tools",
+      "detail": "Each vendor manages its own tours, schedules and availability."
+    },
+    {
+      "title": "Payments",
+      "detail": "Online payment integration with a clear booking and confirmation path."
+    }
+  ],
+  "stack": [],
+  "results": [],
+  "screenshots": [
+    {
+      "label": "Tour booking platform",
+      "alt": "Tour booking platform home page"
+    }
+  ],
+  "privacyNote": null
+}

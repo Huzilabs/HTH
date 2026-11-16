@@ -59,24 +59,26 @@ export function SiteFooter() {
           </ul>
         </nav>
 
-        <div className="md:col-span-3">
-          <h2 className="label text-subtle">Follow</h2>
-          <ul className="mt-4 space-y-1">
-            {site.socials.map((s) => (
-              <li key={s.label}>
-                {isRealUrl(s.href) ? (
-                  <a href={s.href} className={linkCls} rel="noopener me">
-                    {s.label}
-                  </a>
-                ) : (
-                  <span className="text-sm text-subtle">
-                    {s.label} <span className="font-mono text-label">{s.href}</span>
-                  </span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
+        {site.socials.length > 0 && (
+          <div className="md:col-span-3">
+            <h2 className="label text-subtle">Follow</h2>
+            <ul className="mt-4 space-y-1">
+              {site.socials.map((s) => (
+                <li key={s.label}>
+                  {isRealUrl(s.href) ? (
+                    <a href={s.href} className={linkCls} rel="noopener me">
+                      {s.label}
+                    </a>
+                  ) : (
+                    <span className="text-sm text-subtle">
+                      {s.label} <span className="font-mono text-label">{s.href}</span>
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </Container>
       <Container className="flex flex-col gap-2 border-t border-line py-6 text-sm text-subtle sm:flex-row sm:justify-between">
         <p>© {new Date().getFullYear()} HTH (Hub to Hub)</p>

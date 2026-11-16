@@ -37,9 +37,153 @@
   }
 }
 
-/* Route line draws as it enters the viewport. Pure CSS; ignored where unsupported. */
+/* ------------------------------------------------------------------
+ * Motion. CSS only (no JS), small and purposeful, and fully off for
+ * prefers-reduced-motion. Scroll reveals use scroll-driven animations;
+ * browsers without support simply show the content.
+ * ------------------------------------------------------------------ */
+
+/* Theme switch: brief colour cross-fade */
+.theme-switching,
+.theme-switching * {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    fill 0.3s ease,
+    stroke 0.3s ease !important;
+}
+.theme-icon-moon {
+  display: none;
+}
+[data-theme="light"] .theme-icon-sun {
+  display: none;
+}
+[data-theme="light"] .theme-icon-moon {
+  display: block;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes nudge {
+  from {
+    transform: translateY(14px);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes route-draw {
+  from {
+    transform: var(--route-from);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes pop {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
+  /* Hero entrance, staggered with --d. The h1 only moves (no fade) so it never delays LCP. */
+  .enter {
+    animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: var(--d, 0ms);
+  }
+  .enter-h1 {
+    animation: nudge 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  /* Hero route map: lines draw in, stations pop, the sale station pulses */
+  .route-line {
+    stroke-dasharray: 1;
+    animation: dash 1.6s var(--ease-route) both;
+    animation-delay: var(--d, 0ms);
+  }
+  .route-station {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: pop 0.45s cubic-bezier(0.3, 1.6, 0.5, 1) both;
+    animation-delay: var(--d, 0ms);
+  }
+  .route-pulse {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: pulse-ring 2.4s ease-out 2s infinite;
+  }
+  .route-label {
+    animation: fade 0.6s ease both;
+    animation-delay: var(--d, 0ms);
+  }
+
+  /* Tool marquee */
+  .marquee-track {
+    animation: marquee 40s linear infinite;
+  }
+  .marquee:hover .marquee-track,
+  .marquee:focus-within .marquee-track {
+    animation-play-state: paused;
+  }
+
+  /* Card lift */
+  .lift {
+    transition:
+      transform 0.25s ease,
+      border-color 0.2s ease;
+  }
+  .lift:hover {
+    transform: translateY(-3px);
+  }
+
   @supports (animation-timeline: view()) {
+    .reveal,
+    .reveal-up {
+      animation: rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
     .route-draw-x,
     .route-draw-y {
       animation: route-draw linear both;
@@ -56,12 +200,18 @@
     }
   }
 }
-@keyframes route-draw {
-  from {
-    transform: var(--route-from);
+
+/* Moving "lead" on the hero route map (SMIL); hidden for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .route-packet {
+    display: none;
   }
-  to {
-    transform: none;
+  .marquee-track {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .marquee-dup {
+    display: none;
   }
 }
 

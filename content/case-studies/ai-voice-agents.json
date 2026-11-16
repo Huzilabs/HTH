@@ -1,0 +1,135 @@
+{
+  "slug": "ai-voice-agents",
+  "order": 3,
+  "title": "Inbound and outbound AI voice agents, connected to every client's CRM",
+  "shortTitle": "AI Voice Agents",
+  "client": "Voice AI agency (name withheld)",
+  "industry": "Voice AI agency",
+  "service": "AI voice agents",
+  "scope": "12 systems built · 8 tools",
+  "hubs": [
+    "ai",
+    "crm-automation"
+  ],
+  "summary": "For a voice agent agency, we build the AI receptionists, outbound callers and follow-up agents it delivers to its clients, each wired into that client's CRM, calendar and phone number.",
+  "problem": "The agency sells AI phone systems to clients in very different industries, and each one needs its own CRM, calendar, number and compliance setup. Its lead-generation division also needed new leads called within seconds, not hours. Building every agent from scratch didn't scale.",
+  "overviewHeading": "Agents that pick up the phone.",
+  "overview": "We standardised a three-assistant architecture (receptionist, outbound and follow-up) that we deploy per client, with telephony, pipelines, booking and reporting included, so a new client goes live quickly and consistently.",
+  "built": [
+    {
+      "title": "AI phone systems",
+      "detail": "Vapi assistants for reception, outbound calling and follow-up, each connected to the client's CRM, calendar and phone number."
+    },
+    {
+      "title": "Three-assistant setup",
+      "detail": "Receptionist, outbound and follow-up assistants standardised across clients, with custom tools, live call transfer and a backup line."
+    },
+    {
+      "title": "Outreach pipelines",
+      "detail": "12-stage GoHighLevel AI outreach pipelines with outcome-based workflow branches."
+    },
+    {
+      "title": "Telephony",
+      "detail": "Twilio subaccounts, local numbers and A2P registration for every client."
+    },
+    {
+      "title": "Instant lead calls",
+      "detail": "A Facebook lead form triggers an instant outbound call from a Vapi agent that works the new lead."
+    },
+    {
+      "title": "Outbound triggers",
+      "detail": "Calls also start when a contact is tagged in GoHighLevel or a lead list is uploaded to a shared sheet."
+    },
+    {
+      "title": "Calendar booking",
+      "detail": "Live availability checks and booking through GoHighLevel and HubSpot calendars, plus multi-touch follow-up cadences."
+    },
+    {
+      "title": "Many industries",
+      "detail": "Agents delivered for credit services, financial services, insurance, travel, real estate education, environmental services and roofing."
+    },
+    {
+      "title": "End-of-call summaries",
+      "detail": "When a call ends, the contact is found or created, the transcript is analysed, an AI summary is written to the contact and the opportunity moves to the right stage."
+    },
+    {
+      "title": "Voice AI dashboard",
+      "detail": "Total and active calls, minutes, assistants, success and connection rate, average call length and quality indicators."
+    },
+    {
+      "title": "Handover and reporting",
+      "detail": "Handover documentation for every build and monthly per-client reports."
+    },
+    {
+      "title": "Voice and model stack",
+      "detail": "Deepgram Nova 2 for transcription, GPT-4.1 for reasoning and a natural Vapi voice, at around $0.10 per minute."
+    }
+  ],
+  "stack": [
+    "Vapi",
+    "GoHighLevel",
+    "Make.com",
+    "n8n",
+    "Twilio",
+    "HubSpot",
+    "Deepgram",
+    "OpenAI GPT-4.1"
+  ],
+  "results": [
+    {
+      "value": "3",
+      "label": "Standard assistants per client"
+    },
+    {
+      "value": "~$0.10",
+      "label": "Cost per call minute"
+    },
+    {
+      "value": "7+",
+      "label": "Industries served with the same setup"
+    }
+  ],
+  "privacyNote": "Client and assistant names are blurred.",
+  "screenshots": [
+    {
+      "src": "/work/voice-website.jpg",
+      "width": 1440,
+      "height": 900,
+      "label": "The agency's lead division: real-time leads worked by an AI voice agent.",
+      "alt": "Lead-generation website: Exclusive retirement and lending leads, delivered in real time",
+      "group": "Product"
+    },
+    {
+      "src": "/work/voice-dashboard.jpg",
+      "width": 1600,
+      "height": 1202,
+      "label": "Voice AI dashboard: calls, minutes, assistants, connection rate and call quality.",
+      "alt": "Voice AI dashboard showing calls, minutes, assistants, success rate and connection rate",
+      "group": "Product"
+    },
+    {
+      "src": "/work/voice-vapi-assistants.jpg",
+      "width": 1600,
+      "height": 510,
+      "label": "Assistant setup: transcriber, model and voice, around $0.10 a minute.",
+      "alt": "Vapi assistant configuration showing Deepgram Nova 2 transcriber, GPT-4.1 model and Vapi voice with cost and latency",
+      "group": "Product"
+    },
+    {
+      "src": "/work/voice-end-call-workflow.jpg",
+      "width": 1600,
+      "height": 1408,
+      "label": "End-of-call workflow: find the contact, analyse the transcript, move the stage.",
+      "alt": "GoHighLevel end-of-call summary workflow with contact lookup, transcript analysis and lead stage branches",
+      "group": "Workflows"
+    },
+    {
+      "src": "/work/voice-pipeline.jpg",
+      "width": 1558,
+      "height": 1600,
+      "label": "The 12-stage AI outreach pipeline.",
+      "alt": "GoHighLevel AI Outreach pipeline with twelve stages",
+      "group": "Workflows"
+    }
+  ]
+}

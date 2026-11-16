@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/primitives";
 import { site } from "@/lib/content";
 import { MobileNav } from "./MobileNav";
 import { NavLinks } from "./NavLinks";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function SiteHeader() {
   return (
@@ -13,13 +14,16 @@ export function SiteHeader() {
         <Link href="/" className="-ml-1 rounded-sm p-1">
           <Logo />
         </Link>
-        <div className="hidden items-center gap-8 md:flex">
-          <NavLinks items={site.nav} />
-          <ButtonLink href={site.primaryCta.href} arrow>
+        <div className="flex items-center gap-2 md:gap-6">
+          <div className="hidden md:block">
+            <NavLinks items={site.nav} />
+          </div>
+          <ThemeToggle />
+          <ButtonLink href={site.primaryCta.href} arrow className="max-md:hidden">
             {site.primaryCta.label}
           </ButtonLink>
+          <MobileNav items={site.nav} cta={site.primaryCta} />
         </div>
-        <MobileNav items={site.nav} cta={site.primaryCta} />
       </Container>
     </header>
   );

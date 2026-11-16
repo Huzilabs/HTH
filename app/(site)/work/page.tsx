@@ -29,10 +29,10 @@ export default function WorkPage() {
             allLabel={p.allLabel}
             filterLabel={p.filterLabel}
             emptyLabel={p.empty}
-            items={studies.map((s) => ({
+            items={studies.map((s, i) => ({
               slug: s.slug,
               hubs: s.hubs,
-              node: <CaseStudyCard study={s} hubs={hubs} />,
+              node: <CaseStudyCard study={s} hubs={hubs} priority={i === 0} />,
             }))}
           />
         </Container>

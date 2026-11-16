@@ -1,0 +1,40 @@
+{
+  "slug": "case-management-system",
+  "order": 6,
+  "title": "A secure case management system for family court advisory teams",
+  "shortTitle": "Case Management System",
+  "client": "Public sector organisation (name withheld)",
+  "industry": "Public sector",
+  "service": "Web development",
+  "scope": "Web application",
+  "hubs": [
+    "web-commerce"
+  ],
+  "summary": "An enterprise web application that brings casework and sensitive document handling into one secure, structured workspace for family court advisory and support teams.",
+  "problem": "Complex casework depends on sensitive documents, reliable workflows and fast access to the right information. Spread across tools, it slowed teams down and made oversight harder.",
+  "overviewHeading": "A secure digital workspace.",
+  "overview": "A secure portal that brings case management and document handling into one system, improving visibility while respecting the access needs of every stakeholder.",
+  "built": [
+    {
+      "title": "Case workspace",
+      "detail": "One structured place for every case, its status and the people working on it."
+    },
+    {
+      "title": "Secure document handling",
+      "detail": "Upload, storage and access to sensitive documents with role-based permissions."
+    },
+    {
+      "title": "Workflows",
+      "detail": "Defined steps for casework so nothing depends on memory or email threads."
+    }
+  ],
+  "stack": [],
+  "results": [],
+  "screenshots": [
+    {
+      "label": "Case management dashboard",
+      "alt": "Case management system dashboard"
+    }
+  ],
+  "privacyNote": null
+}

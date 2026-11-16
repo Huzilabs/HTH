@@ -1,0 +1,161 @@
+{
+  "slug": "b2b-agency-automation",
+  "order": 4,
+  "title": "The full automation backend for an inbound and outbound B2B agency",
+  "shortTitle": "B2B Agency Automation",
+  "client": "B2B marketing agency (name withheld)",
+  "industry": "B2B marketing agency",
+  "service": "Workflow automation + AI agents",
+  "scope": "11 systems built · 14 tools",
+  "hubs": [
+    "crm-automation",
+    "ai"
+  ],
+  "summary": "For an agency that runs inbound and outbound marketing as one pipeline, we built self-serve signup with Stripe, automatic CRM and outreach setup, an AI account assistant inside the CRM, outreach routing and the monitoring behind it.",
+  "problem": "Every new client meant manual setup across GoHighLevel, LinkedIn outreach and cold email tools. Replies from LinkedIn, email and calls landed in different places, upgrades needed a person, and when an automation failed nobody knew until a client complained.",
+  "overviewHeading": "One pipeline, fully automated.",
+  "overview": "We built the backend behind the agency's whole offer, including the client hub every customer works in: signup, provisioning, reporting, routing, an AI assistant and reliability monitoring.",
+  "built": [
+    {
+      "title": "Client launchpad",
+      "detail": "A 12-step onboarding checklist that opens as the default screen in every client's GoHighLevel sub-account, with add-on upsells."
+    },
+    {
+      "title": "Self-serve signup",
+      "detail": "A seven-step wizard that takes payment in Stripe, then sets up the GoHighLevel sub-account, HeyReach workspace and Smartlead campaign automatically, with abandonment alerts."
+    },
+    {
+      "title": "Client stats dashboard",
+      "detail": "LinkedIn and cold email results per client, synced into Supabase and embedded in the GoHighLevel sidebar."
+    },
+    {
+      "title": "AI account assistant",
+      "detail": "An assistant inside the CRM, built on Claude in n8n. It looks up the client's plan, answers from a knowledge base refreshed from a Google Doc, opens a Stripe checkout for upgrades and escalates to Slack."
+    },
+    {
+      "title": "Call hook engine",
+      "detail": "Scrapes prospect homepages, classifies them with Claude, runs a search visibility audit and writes personalised call hooks into the dialer, in batches of 3,600+ rows."
+    },
+    {
+      "title": "AI reply classification",
+      "detail": "LinkedIn replies are classified by intent with Claude. High-intent replies become GoHighLevel opportunities; the rest are routed and stopped."
+    },
+    {
+      "title": "Outreach routing",
+      "detail": "Email replies, Clay webhook leads and JustCall call events land in GoHighLevel with contacts, tags, conversations and opportunities."
+    },
+    {
+      "title": "Pulse reliability console",
+      "detail": "A multi-tenant console with a 16-table Supabase schema, collectors for n8n, Smartlead, HeyReach and GoHighLevel, and scheduled checks."
+    },
+    {
+      "title": "Monitoring and alerts",
+      "detail": "Slack alerts with deduplication, PagerDuty wired into n8n error workflows, and bot versus human detection for email opens."
+    },
+    {
+      "title": "Commission tracking",
+      "detail": "Per-caller attribution through dedicated calendars, built on JustCall, GoHighLevel, n8n and Google Sheets."
+    },
+    {
+      "title": "Business assessment",
+      "detail": "An AI business assessment with scoring, branded report emails and score-based pipeline routing."
+    }
+  ],
+  "stack": [
+    "GoHighLevel",
+    "n8n",
+    "Supabase",
+    "Next.js",
+    "Vercel",
+    "Stripe",
+    "HeyReach",
+    "Smartlead",
+    "Claude API",
+    "DuckDB",
+    "JustCall",
+    "Clay",
+    "PagerDuty",
+    "Slack"
+  ],
+  "results": [
+    {
+      "value": "~15 min",
+      "label": "From signup to a working CRM"
+    },
+    {
+      "value": "7 steps",
+      "label": "Self-serve signup, payment included"
+    },
+    {
+      "value": "3,600+",
+      "label": "Prospects processed per hook batch"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/work/agency-website.jpg",
+      "width": 1440,
+      "height": 900,
+      "label": "The agency's offer: inbound and outbound marketing, one pipeline.",
+      "alt": "B2B outreach agency website: Inbound and Outbound Marketing. One Pipeline.",
+      "group": "Product"
+    },
+    {
+      "src": "/work/agency-onboarding-launchpad.jpg",
+      "width": 1440,
+      "height": 900,
+      "label": "Client launchpad: the onboarding checklist inside every client's CRM.",
+      "alt": "Client onboarding launchpad with a 12-step checklist inside the CRM",
+      "group": "Product"
+    },
+    {
+      "src": "/work/agency-signup.jpg",
+      "width": 1600,
+      "height": 1058,
+      "label": "Self-serve signup: a CRM set up in about 15 minutes, with work-email validation.",
+      "alt": "Free CRM signup page with business name, business email and phone fields",
+      "group": "Product"
+    },
+    {
+      "src": "/work/agency-ai-assistant.jpg",
+      "width": 1086,
+      "height": 1600,
+      "label": "AI account assistant inside the CRM.",
+      "alt": "AI account assistant chat widget open inside the client CRM dashboard",
+      "group": "Product"
+    },
+    {
+      "src": "/work/agency-n8n-signup.jpg",
+      "width": 1600,
+      "height": 657,
+      "label": "The signup funnel workflow: Stripe, Supabase, GoHighLevel provisioning and Slack alerts.",
+      "alt": "Large n8n signup funnel workflow with Stripe, Supabase, GoHighLevel provisioning and Slack alerts across several branches",
+      "group": "Automations"
+    },
+    {
+      "src": "/work/agency-n8n-assistant.jpg",
+      "width": 1600,
+      "height": 944,
+      "label": "The assistant workflow: client lookup, Claude, Stripe checkout and Slack escalation.",
+      "alt": "n8n workflow for the AI account assistant: client lookup, Claude assistant, Stripe checkout, escalation to Slack, plus a Stripe payment webhook",
+      "group": "Automations"
+    },
+    {
+      "src": "/work/agency-n8n-checkout.jpg",
+      "width": 1600,
+      "height": 1040,
+      "label": "Launchpad checkout workflow.",
+      "alt": "n8n Launchpad checkout workflow that tracks onboarding flags, tags GoHighLevel, routes Slack alerts and creates Stripe checkout sessions",
+      "group": "Automations"
+    },
+    {
+      "src": "/work/agency-n8n-knowledge.jpg",
+      "width": 1600,
+      "height": 1057,
+      "label": "Knowledge base refresh from a Google Doc.",
+      "alt": "n8n workflow that reads a Google Doc on a schedule and caches it to Supabase",
+      "group": "Automations"
+    }
+  ],
+  "privacyNote": null
+}

@@ -12,12 +12,7 @@
     "message": "Hi HTH, I'd like to talk about a project."
   },
   "regions": ["Pakistan", "United States", "United Kingdom", "Gulf (UAE, Saudi Arabia, Qatar)"],
-  "socials": [
-    { "label": "LinkedIn", "href": "[PLACEHOLDER: LinkedIn URL]" },
-    { "label": "Instagram", "href": "[PLACEHOLDER: Instagram URL]" },
-    { "label": "Facebook", "href": "[PLACEHOLDER: Facebook URL]" },
-    { "label": "YouTube", "href": "[PLACEHOLDER: YouTube URL]" }
-  ],
+  "socials": [],
   "nav": [
     { "label": "Services", "href": "/services" },
     { "label": "Work", "href": "/work" },

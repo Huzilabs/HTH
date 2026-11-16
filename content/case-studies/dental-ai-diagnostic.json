@@ -1,0 +1,160 @@
+{
+  "slug": "dental-ai-diagnostic",
+  "order": 2,
+  "title": "An AI diagnostic that scores a dental practice and books the sales call",
+  "shortTitle": "Dental AI Diagnostic",
+  "client": "Dental growth platform (name withheld)",
+  "industry": "Dental growth",
+  "service": "AI agents + workflow automation",
+  "scope": "11 systems built · 13 tools",
+  "hubs": [
+    "ai",
+    "crm-automation"
+  ],
+  "summary": "For a platform that grows dental practices with AI agents, we built the diagnostic that scans a practice online, scores it across 7 growth dimensions and books the call, plus a voice advisor and the onboarding pipeline that runs once a practice signs.",
+  "problem": "The platform needed to show each dental practice, in minutes, exactly where it was losing patients, and turn that insight into a booked sales call. After signing, every new practice also had to be set up across listings, CRM, phone and an AI receptionist, which was slow and manual.",
+  "overviewHeading": "From scan to booked call.",
+  "overview": "A practice enters its website. Our pipeline reads it, scores it against local competitors, walks the owner through the results with an AI host, and has a voice advisor call with the practice's own report loaded in. Once they sign, onboarding runs on its own.",
+  "built": [
+    {
+      "title": "Website scraping",
+      "detail": "A Make.com pipeline that reads a practice's website, with a fallback for Cloudflare-protected sites, and extracts structured data with Claude."
+    },
+    {
+      "title": "7-dimension diagnostic",
+      "detail": "A report scoring 7 growth dimensions using Google Places data, review scraping, ad detection and Google Maps competitor comparisons."
+    },
+    {
+      "title": "Report loading page",
+      "detail": "A funnel page that waits for the report, then redirects, with an error alert when a site can't be read."
+    },
+    {
+      "title": "Live Results Room",
+      "detail": "A funnel page with an AI host that walks the owner through their scan, powered by a Cloudflare Worker AI proxy."
+    },
+    {
+      "title": "Voice advisor",
+      "detail": "A Vapi voice advisor that calls from the confirmation page with the practice's own data loaded in."
+    },
+    {
+      "title": "Listings onboarding",
+      "detail": "New practices from Typeform become fully populated Yext locations with AI-written descriptions, logged back to GoHighLevel."
+    },
+    {
+      "title": "AI visibility reporting",
+      "detail": "Monthly AI mentions, sentiment and citations across ChatGPT, Claude, Gemini and Perplexity, with weekly snapshots for trend history."
+    },
+    {
+      "title": "GoHighLevel setup",
+      "detail": "Custom fields, ROI and booking calculations, email sequences and webinar watch-time tracking."
+    },
+    {
+      "title": "Real-time PMS sync",
+      "detail": "NexHealth appointment events create, cancel or reschedule the matching GoHighLevel appointment within seconds."
+    },
+    {
+      "title": "AI receptionist onboarding",
+      "detail": "A practice's Typeform submission sets up its AI receptionist and buys a local Twilio number automatically."
+    },
+    {
+      "title": "Webinar link builder",
+      "detail": "Personal webinar schedule links and calendar invites, with descriptions written by GPT for each lead."
+    }
+  ],
+  "stack": [
+    "Make.com",
+    "Claude API",
+    "Vapi",
+    "Yext",
+    "GoHighLevel",
+    "Supabase Edge Functions",
+    "Cloudflare Workers",
+    "Serper",
+    "Apify",
+    "Typeform",
+    "NexHealth",
+    "Twilio",
+    "OpenAI"
+  ],
+  "results": [
+    {
+      "value": "7",
+      "label": "Growth dimensions scored per practice"
+    },
+    {
+      "value": "Seconds",
+      "label": "PMS to CRM appointment sync"
+    },
+    {
+      "value": "4",
+      "label": "AI engines tracked for visibility"
+    }
+  ],
+  "privacyNote": "Practice names and contact details are blurred for privacy.",
+  "screenshots": [
+    {
+      "src": "/work/dental-website.jpg",
+      "width": 1440,
+      "height": 900,
+      "label": "The client's platform: a team of AI agents for dental practices.",
+      "alt": "Dental growth platform website: Fire your dental marketing agency. Hire a team of AI agents.",
+      "group": "Product"
+    },
+    {
+      "src": "/work/dental-report.jpg",
+      "width": 1600,
+      "height": 1031,
+      "label": "AI diagnostic report: growth score, estimated revenue gain and a local competitor comparison.",
+      "alt": "AI diagnostic report scoring a dental practice and comparing it with local competitors",
+      "group": "Product"
+    },
+    {
+      "src": "/work/dental-live-room.jpg",
+      "width": 1600,
+      "height": 1029,
+      "label": "Live Results Room: a guided walkthrough of the scan with an AI host and live chat.",
+      "alt": "Live Results Room with the scan checklist, patient leaks, the custom AI team offer and live session chat",
+      "group": "Product"
+    },
+    {
+      "src": "/work/dental-ai-visibility.jpg",
+      "width": 1600,
+      "height": 1145,
+      "label": "AI Visibility Manager: mentions, sentiment and citations across ChatGPT, Claude, Gemini and Perplexity.",
+      "alt": "AI Visibility Manager with monthly AI mentions, sentiment breakdown, AI engines tracked and citations",
+      "group": "Product"
+    },
+    {
+      "src": "/work/dental-practice-info.jpg",
+      "width": 1600,
+      "height": 998,
+      "label": "Practice profile: the data that powers each practice's AI team.",
+      "alt": "Platform dashboard Practice Information screen with practice details and online presence fields",
+      "group": "Product"
+    },
+    {
+      "src": "/work/dental-make-pms-sync.jpg",
+      "width": 1600,
+      "height": 1156,
+      "label": "NexHealth to GoHighLevel appointment sync.",
+      "alt": "Make.com scenario syncing NexHealth appointment events to GoHighLevel: create, cancel or reschedule the matching appointment",
+      "group": "Automations"
+    },
+    {
+      "src": "/work/dental-make-receptionist-onboarding.jpg",
+      "width": 1600,
+      "height": 768,
+      "label": "AI receptionist onboarding from a Typeform submission, including phone number setup.",
+      "alt": "Make.com scenario that onboards an AI receptionist from a Typeform submission, including phone number setup",
+      "group": "Automations"
+    },
+    {
+      "src": "/work/dental-make-webinar-links.jpg",
+      "width": 1600,
+      "height": 1152,
+      "label": "Personalised webinar link and invite builder.",
+      "alt": "Make.com webinar schedule link builder: webhook, Google Sheets, GoHighLevel, Google Calendar and a GPT step that personalises the invite",
+      "group": "Automations"
+    }
+  ]
+}

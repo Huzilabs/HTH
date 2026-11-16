@@ -24,7 +24,7 @@ export function ProcessSteps({ steps }: { steps: Step[] }) {
   return (
     <ol className="grid gap-px overflow-hidden rounded-md border border-line bg-line md:grid-cols-2 lg:grid-cols-4">
       {steps.map((s, i) => (
-        <li key={s.title} className="bg-ground p-6">
+        <li key={s.title} className="reveal bg-ground p-6">
           <span className="label text-accent">{String(i + 1).padStart(2, "0")}</span>
           <h3 className="mt-6 text-h4 font-bold">{s.title}</h3>
           <p className="mt-2 text-sm text-muted">{s.detail}</p>
@@ -65,7 +65,7 @@ export function CtaBand({
     <section aria-labelledby="cta-heading" className="border-t border-line">
       <Container className="grid gap-10 py-20 md:grid-cols-12 md:py-28">
         <div className="md:col-span-7">
-          <h2 id="cta-heading" className="display text-h1 text-balance">
+          <h2 id="cta-heading" className="display reveal text-h1 text-balance">
             {heading}
           </h2>
         </div>
@@ -137,9 +137,13 @@ export function PageIntro({
   return (
     <Container className="pb-16 pt-10 md:pb-20 md:pt-14">
       {crumbs && <Breadcrumbs items={crumbs} />}
-      <p className="label mt-10 text-accent md:mt-14">{eyebrow}</p>
-      <h1 className="display mt-4 max-w-[18ch] text-h1 text-balance">{heading}</h1>
-      {body && <p className="mt-6 max-w-[60ch] text-lead text-muted">{body}</p>}
+      <p className="label enter mt-10 text-accent md:mt-14">{eyebrow}</p>
+      <h1 className="display enter-h1 mt-4 max-w-[18ch] text-h1 text-balance">{heading}</h1>
+      {body && (
+        <p className="enter mt-6 max-w-[60ch] text-lead text-muted" style={{ "--d": "120ms" } as React.CSSProperties}>
+          {body}
+        </p>
+      )}
       {children}
     </Container>
   );

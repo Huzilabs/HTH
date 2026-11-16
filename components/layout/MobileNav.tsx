@@ -38,9 +38,9 @@ export function MobileNav({ items, cta }: { items: Item[]; cta: Item }) {
         aria-expanded={open}
         aria-controls={panelId}
         onClick={() => setOpen((o) => !o)}
-        className="label inline-flex min-h-11 items-center gap-2 rounded-full border border-line-strong px-4 text-ink"
+        className="label inline-flex h-11 min-w-11 items-center justify-center gap-2 rounded-full border border-line-strong text-ink sm:px-4"
       >
-        {open ? "Close" : "Menu"}
+        <span className="sr-only sm:not-sr-only">{open ? "Close" : "Menu"}</span>
         <svg viewBox="0 0 16 16" aria-hidden="true" className="h-4 w-4">
           {open ? (
             <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" strokeWidth="1.6" />

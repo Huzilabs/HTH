@@ -1,0 +1,42 @@
+{
+  "slug": "property-management-dashboard",
+  "order": 7,
+  "title": "A property dashboard for bookings, rentals and daily performance",
+  "shortTitle": "Property Management Dashboard",
+  "client": "Property management company (name withheld)",
+  "industry": "Property management",
+  "service": "Web development",
+  "scope": "Web application",
+  "hubs": [
+    "web-commerce"
+  ],
+  "summary": "An Angular dashboard that gives property operators one view of bookings, rentals and portfolio performance, and the actions that matter next.",
+  "problem": "Property teams lost time when booking, rental and performance data lived in disconnected tools, and nobody had a single view of the portfolio.",
+  "overviewHeading": "One view of the portfolio.",
+  "overview": "A focused dashboard that brings bookings, rentals and performance together so operators see what needs attention without switching tools.",
+  "built": [
+    {
+      "title": "Booking management",
+      "detail": "Bookings across properties in one calendar and list view."
+    },
+    {
+      "title": "Rental tracking",
+      "detail": "Rental status, income and occupancy tracked per property."
+    },
+    {
+      "title": "Performance overview",
+      "detail": "Daily portfolio performance at a glance."
+    }
+  ],
+  "stack": [
+    "Angular"
+  ],
+  "results": [],
+  "screenshots": [
+    {
+      "label": "Property dashboard",
+      "alt": "Property management dashboard with bookings and rental tracking"
+    }
+  ],
+  "privacyNote": null
+}

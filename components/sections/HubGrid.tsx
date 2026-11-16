@@ -9,7 +9,7 @@ export function HubGrid({ hubs, services }: { hubs: Hub[]; services: Service[] }
       {hubs.map((hub, i) => {
         const list = services.filter((s) => s.hub === hub.slug);
         return (
-          <li key={hub.slug} className="flex flex-col bg-ground p-6 md:p-8">
+          <li key={hub.slug} className="reveal flex flex-col bg-ground p-6 md:p-8">
             <div className="flex items-center justify-between">
               <span className="label text-subtle">Hub {hub.number}</span>
               <HubGlyph index={i} />

@@ -30,22 +30,36 @@ export type Service = {
   seo: { title: string; description: string };
 };
 
+export type Screenshot = {
+  label: string;
+  alt: string;
+  src?: string;
+  width?: number;
+  height?: number;
+  group?: string;
+};
+
 export type CaseStudy = {
   slug: string;
+  order: number;
   title: string;
+  shortTitle: string;
   client: string;
   industry: string;
-  region: string;
-  year: string;
+  region?: string;
+  service: string;
+  scope: string;
   hubs: HubSlug[];
   summary: string;
   problem: string;
-  built: string[];
+  overviewHeading: string;
+  overview: string;
+  built: Step[];
   stack: string[];
   results: { value: string; label: string }[];
-  screenshots: { label: string; alt: string; src?: string; width?: number; height?: number }[];
+  screenshots: Screenshot[];
+  privacyNote?: string | null;
   testimonialId?: string;
-  placeholder?: boolean;
 };
 
 export type Testimonial = {
