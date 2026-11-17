@@ -81,7 +81,7 @@ export function SiteFooter() {
         )}
       </Container>
       <Container className="flex flex-col gap-2 border-t border-line py-6 text-sm text-subtle sm:flex-row sm:justify-between">
-        <p>© {new Date().getFullYear()} HTH (Hub to Hub)</p>
+        <p>© 2024 HTH (Hub to Hub)</p>
         <p>{site.footerNote}</p>
       </Container>
     </footer>

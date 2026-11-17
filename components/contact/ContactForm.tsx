@@ -2,6 +2,7 @@
 
 import { useRef, useState, type FormEvent } from "react";
 import { Arrow } from "@/components/ui/Button";
+import { ServicesSelect } from "./ServicesSelect";
 import { validateContact, type ContactErrors, type ContactPayload } from "@/lib/contact-schema";
 
 type Group = { hub: string; services: string[] };
@@ -49,7 +50,7 @@ export function ContactForm({ groups, copy, email }: { groups: Group[]; copy: Co
     if (Object.keys(v).length > 0) {
       const first = Object.keys(v)[0];
       const el = formRef.current?.querySelector<HTMLElement>(
-        first === "services" ? "input[name=services]" : `[name=${first}]`,
+        first === "services" ? "[name=services-trigger]" : `[name=${first}]`,
       );
       el?.focus();
       return;
@@ -91,7 +92,22 @@ export function ContactForm({ groups, copy, email }: { groups: Group[]; copy: Co
   const describedBy = (k: keyof ContactPayload) => (errors[k] ? `${k}-error` : undefined);
 
   return (
-    <form ref={formRef} onSubmit={onSubmit} noValidate className="relative space-y-6">
+    <form
+      ref={formRef}
+      onSubmit={onSubmit}
+      onChange={(e) => {
+        // Clear a field's error as soon as the visitor changes it.
+        const name = (e.target as unknown as HTMLInputElement).name as keyof ContactPayload;
+        if (errors[name])
+          setErrors((prev) => {
+            const next = { ...prev };
+            delete next[name];
+            return next;
+          });
+      }}
+      noValidate
+      className="relative space-y-6"
+    >
       {status === "error" && (
         <div ref={statusRef} tabIndex={-1} role="alert" className="rounded-md border border-accent p-5">
           <p className="font-semibold text-ink">{copy.error.heading}</p>
@@ -135,32 +151,10 @@ export function ContactForm({ groups, copy, email }: { groups: Group[]; copy: Co
         </div>
       </div>
 
-      <fieldset aria-describedby={describedBy("services")}>
-        <legend className={labelCls}>
-          Services needed <span className="text-subtle">(pick any)</span>
-        </legend>
-        <div className="mt-3 grid gap-6 sm:grid-cols-2">
-          {groups.map((g) => (
-            <div key={g.hub}>
-              <p className="label text-subtle">{g.hub}</p>
-              <ul className="mt-2 space-y-1">
-                {g.services.map((s) => {
-                  const id = `svc-${s.replace(/\W+/g, "-").toLowerCase()}`;
-                  return (
-                    <li key={s}>
-                      <label htmlFor={id} className="flex min-h-10 cursor-pointer items-center gap-3 text-sm text-muted hover:text-ink">
-                        <input id={id} type="checkbox" name="services" value={s} className="h-5 w-5 shrink-0 accent-accent" />
-                        {s}
-                      </label>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          ))}
-        </div>
+      <div>
+        <ServicesSelect groups={groups} invalid={!!errors.services} describedBy={describedBy("services")} />
         <ErrorText id="services-error" msg={errors.services} />
-      </fieldset>
+      </div>
 
       <div>
         <label htmlFor="budget" className={labelCls}>

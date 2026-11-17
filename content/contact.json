@@ -30,7 +30,7 @@
   "booking": {
     "heading": "Book a call",
     "body": "30 minutes. We look at how leads reach you today and where they go cold.",
-    "url": "https://calendly.com/huzaifayaseen306",
+    "url": "https://calendly.com/huzaifayaseen306/30min",
     "fallback": "Booking calendar: set BOOKING_EMBED_URL"
   },
   "whatsapp": {
