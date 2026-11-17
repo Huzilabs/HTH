@@ -6,6 +6,7 @@ import { Container, Placeholder } from "@/components/ui/primitives";
 import { contact, getServicesByHub, hubs, site } from "@/lib/content";
 import { mailto, whatsappHref } from "@/lib/links";
 import { breadcrumbLd, pageMetadata } from "@/lib/seo";
+import { siteUrl } from "@/lib/site-url";
 
 export const metadata = pageMetadata({ ...contact.seo, path: "/contact" });
 
@@ -14,13 +15,22 @@ const crumbs = [
   { name: "Contact", path: "/contact" },
 ];
 
+/**
+ * Booking embed: content/contact.json `booking.url` (any https scheduler: Calendly, Cal.com, TidyCal, GHL),
+ * overridable with BOOKING_EMBED_URL. Calendly links get its inline-embed parameters automatically.
+ */
 function calendarUrl(): string | null {
-  // Any https scheduler embed works: Cal.com, Calendly, TidyCal or GoHighLevel. GHL_CALENDAR_EMBED_URL is still read for older setups.
-  const raw = process.env.BOOKING_EMBED_URL || process.env.GHL_CALENDAR_EMBED_URL;
+  const raw = process.env.BOOKING_EMBED_URL || process.env.GHL_CALENDAR_EMBED_URL || contact.booking.url;
   if (!raw) return null;
   try {
     const u = new URL(raw);
-    return u.protocol === "https:" ? u.toString() : null;
+    if (u.protocol !== "https:") return null;
+    if (u.hostname.endsWith("calendly.com")) {
+      u.searchParams.set("embed_domain", new URL(siteUrl).hostname);
+      u.searchParams.set("embed_type", "Inline");
+      u.searchParams.set("hide_gdpr_banner", "1");
+    }
+    return u.toString();
   } catch {
     return null;
   }
@@ -78,7 +88,7 @@ export default function ContactPage() {
                   src={cal}
                   title="Book a call with HTH"
                   loading="lazy"
-                  className="h-[720px] w-full rounded-md border border-line bg-ink"
+                  className="h-[700px] w-full min-w-[300px] rounded-md border border-line bg-ink"
                 />
               ) : (
                 <Placeholder label={contact.booking.fallback} alt="Booking calendar" ratio="aspect-[4/5]" />

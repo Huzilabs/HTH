@@ -29,7 +29,7 @@ Other scripts:
 | `RESEND_API_KEY` | Yes in production | Emails each contact form brief to your inbox through [Resend](https://resend.com) (free: 3,000 emails/month). Sign up with the inbox that should receive briefs, then create a Sending API key. In development, if it's unset, briefs are logged to the terminal and the form shows success. In production, if it's unset, the form shows its error state with your email address. |
 | `CONTACT_TO_EMAIL` | No | Where briefs are sent. Defaults to the email in `content/site.json`. |
 | `CONTACT_FROM_EMAIL` | No | Sender address. Defaults to Resend's shared `onboarding@resend.dev`, which can only deliver to your own Resend account email. Verify your domain in Resend to send from your own address. |
-| `BOOKING_EMBED_URL` | Recommended | `https` embed URL of any scheduler: Cal.com, Calendly, TidyCal or GoHighLevel. Shown on `/contact#book`. A labelled placeholder appears until it's set. |
+| `BOOKING_EMBED_URL` | No | Overrides the booking link in `content/contact.json` (`booking.url`, currently Calendly). Any `https` scheduler works: Calendly, Cal.com, TidyCal or GoHighLevel. Shown on `/contact#book`. |
 
 Pages are static, so env values are read at **build time**. After changing them in Vercel, redeploy.
 
