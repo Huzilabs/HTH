@@ -26,24 +26,16 @@ Other scripts:
 | Variable | Required | Purpose |
 | --- | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Yes in production | Canonical URL, e.g. `https://www.yourdomain.com`. Used by canonical tags, sitemap, OG and JSON-LD. Falls back to the Vercel production domain. |
-| `GHL_WEBHOOK_URL` | Yes in production | GoHighLevel **Inbound Webhook** trigger URL. The contact form posts to `/api/contact`, which forwards to this URL server-side. In development, if it's unset, submissions are logged to the terminal and the form shows success. In production, if it's unset, the form shows its error state. |
-| `GHL_CALENDAR_EMBED_URL` | Recommended | `https` URL of your GHL booking calendar embed. Shown on `/contact#book`. A labelled placeholder appears until it's set. |
+| `RESEND_API_KEY` | Yes in production | Emails each contact form brief to your inbox through [Resend](https://resend.com) (free: 3,000 emails/month). Sign up with the inbox that should receive briefs, then create a Sending API key. In development, if it's unset, briefs are logged to the terminal and the form shows success. In production, if it's unset, the form shows its error state with your email address. |
+| `CONTACT_TO_EMAIL` | No | Where briefs are sent. Defaults to the email in `content/site.json`. |
+| `CONTACT_FROM_EMAIL` | No | Sender address. Defaults to Resend's shared `onboarding@resend.dev`, which can only deliver to your own Resend account email. Verify your domain in Resend to send from your own address. |
+| `BOOKING_EMBED_URL` | Recommended | `https` embed URL of any scheduler: Cal.com, Calendly, TidyCal or GoHighLevel. Shown on `/contact#book`. A labelled placeholder appears until it's set. |
 
 Pages are static, so env values are read at **build time**. After changing them in Vercel, redeploy.
 
-### What the contact webhook receives
+### What a brief email contains
 
-```json
-{
-  "first_name": "", "last_name": "", "full_name": "", "email": "",
-  "phone": "", "whatsapp": "", "company_name": "",
-  "services": ["AI chatbots", "SEO"], "services_text": "AI chatbots, SEO",
-  "budget": "", "message": "", "source": "Website contact form",
-  "page": "", "submitted_at": "ISO date"
-}
-```
-
-In your GHL workflow, map these fields with **Create/Update Contact**. Use `services_text` for a single-line custom field.
+Subject `New brief from <name>: <services>`, with name, email, WhatsApp, company, services, budget, the page it was sent from and the message. **Reply-To** is set to the sender, so you can answer straight from your inbox.
 
 ## Project structure
 
@@ -56,7 +48,7 @@ app/
     work/                    case study index (hub filter) + [slug]
     about/ contact/ insights/ (+ [slug] for MDX posts)
     **/opengraph-image.tsx   brand-style OG images (next/og)
-  api/contact/route.ts       validates and forwards the form to GHL
+  api/contact/route.ts       validates the form and emails it via Resend
   brand/                     internal brand directions page (noindex, not in nav)
   sitemap.ts robots.ts llms.txt/route.ts not-found.tsx icon.svg apple-icon.tsx
 components/                  brand/ layout/ sections/ ui/ seo/ contact/
@@ -68,7 +60,7 @@ assets/fonts/                font files used to draw OG images
 
 ## Editing content
 
-Everything below lives in `/content`. Search the codebase for `[PLACEHOLDER` to find every marker waiting for real information (numbers, client names, social URLs, the WhatsApp number, response times).
+Everything below lives in `/content`. Search the codebase for `[PLACEHOLDER` to find every marker waiting for real information (home stats and the WhatsApp number).
 
 | File | Controls |
 | --- | --- |
@@ -172,7 +164,7 @@ Brand direction **B, "Network"** (compare all three at `/brand`). Tokens live in
 
 1. Push this repository to GitHub.
 2. In Vercel: **Add New → Project → Import** this repo. The framework preset (Next.js) is detected automatically. Leave the build settings as they are.
-3. Under **Settings → Environment Variables**, add `NEXT_PUBLIC_SITE_URL`, `GHL_WEBHOOK_URL` and `GHL_CALENDAR_EMBED_URL` for Production (and Preview if you want forms to work there).
+3. Under **Settings → Environment Variables**, add `NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY` and `BOOKING_EMBED_URL` for Production (and Preview if you want forms to work there).
 4. Deploy. Then add your domain under **Settings → Domains** and set `NEXT_PUBLIC_SITE_URL` to match.
 5. Redeploy after any env var change, because pages read them at build time.
 6. Submit `https://yourdomain.com/sitemap.xml` in Google Search Console.
@@ -182,5 +174,5 @@ Brand direction **B, "Network"** (compare all three at `/brand`). Tokens live in
 - [ ] Replace every `[PLACEHOLDER: ...]` (search the repo)
 - [ ] Add real testimonials with `placeholder: false`, or accept that the sections stay hidden
 - [ ] Set the WhatsApp number and social URLs in `content/site.json`
-- [ ] Set all three env vars in Vercel and send a test form submission
+- [ ] Set the env vars in Vercel and send a test form submission
 - [ ] Add real case study screenshots

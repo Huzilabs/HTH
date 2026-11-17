@@ -25,14 +25,14 @@ export default function WorkPage() {
             Case studies
           </h2>
           <WorkFilter
-            options={hubs.map((h) => ({ slug: h.slug, label: h.shortName }))}
+            options={hubs.filter((h) => studies.some((s) => s.hubs.includes(h.slug))).map((h) => ({ slug: h.slug, label: h.shortName }))}
             allLabel={p.allLabel}
             filterLabel={p.filterLabel}
             emptyLabel={p.empty}
             items={studies.map((s, i) => ({
               slug: s.slug,
               hubs: s.hubs,
-              node: <CaseStudyCard study={s} hubs={hubs} priority={i === 0} />,
+              node: <CaseStudyCard study={s} hubs={hubs} priority={i < 3} />,
             }))}
           />
         </Container>

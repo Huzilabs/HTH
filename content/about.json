@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "About | HTH (Hub to Hub)",
-    "description": "Why we're called Hub to Hub, how we work remotely across time zones for clients in Pakistan, the US, the UK and the Gulf, and the team behind the work."
+    "description": "Why we're called Hub to Hub, how we work remotely across time zones for clients in Pakistan, the US, the UK and the Gulf."
   },
   "hero": {
     "eyebrow": "About",
@@ -19,36 +19,58 @@
   "principles": {
     "heading": "How we work",
     "items": [
-      { "title": "Your accounts, your data", "detail": "We build inside your CRM, ad, hosting and store accounts. If we part ways, you keep everything." },
-      { "title": "Map before we build", "detail": "You approve a written map of the system before any build starts, so there are no surprises in the invoice or the result." },
-      { "title": "Measured on sales", "detail": "We report on booked calls, orders and revenue by source, not clicks and impressions." },
-      { "title": "Documented by default", "detail": "Every workflow, agent and integration is documented so your team, or anyone else, can run it." }
+      {
+        "title": "Your accounts, your data",
+        "detail": "We build inside your CRM, ad, hosting and store accounts. If we part ways, you keep everything."
+      },
+      {
+        "title": "Map before we build",
+        "detail": "You approve a written map of the system before any build starts, so there are no surprises in the invoice or the result."
+      },
+      {
+        "title": "Measured on sales",
+        "detail": "We report on booked calls, orders and revenue by source, not clicks and impressions."
+      },
+      {
+        "title": "Documented by default",
+        "detail": "Every workflow, agent and integration is documented so your team, or anyone else, can run it."
+      }
     ]
   },
   "remote": {
     "heading": "Remote, across four regions",
     "body": "We work with clients in Pakistan, the US, the UK and the Gulf. Being remote is how we're set up, not a compromise.",
     "points": [
-      { "title": "A daily overlap window", "detail": "We agree a fixed window each day when we're online together for calls and quick decisions." },
-      { "title": "Async by default", "detail": "Progress arrives as short Loom videos and written updates, so nothing waits for a meeting." },
-      { "title": "One shared board", "detail": "Every task, its status and its owner live on a board you can see at any time." },
-      { "title": "Fast response", "detail": "[PLACEHOLDER: response time commitment, e.g. replies within one business day in your time zone]" }
+      {
+        "title": "A daily overlap window",
+        "detail": "We agree a fixed window each day when we're online together for calls and quick decisions."
+      },
+      {
+        "title": "Async by default",
+        "detail": "Progress arrives as short Loom videos and written updates, so nothing waits for a meeting."
+      },
+      {
+        "title": "One shared board",
+        "detail": "Every task, its status and its owner live on a board you can see at any time."
+      }
     ],
     "zones": [
-      { "label": "US Eastern", "tz": "America/New_York" },
-      { "label": "UK", "tz": "Europe/London" },
-      { "label": "Gulf", "tz": "Asia/Dubai" },
-      { "label": "Pakistan", "tz": "Asia/Karachi" }
-    ]
-  },
-  "team": {
-    "heading": "The team",
-    "body": "A small senior team, each focused on one hub, working together on every system.",
-    "members": [
-      { "role": "CRM and automation lead", "hub": "crm-automation" },
-      { "role": "AI agents lead", "hub": "ai" },
-      { "role": "Web and commerce lead", "hub": "web-commerce" },
-      { "role": "Growth lead", "hub": "growth" }
+      {
+        "label": "US Eastern",
+        "tz": "America/New_York"
+      },
+      {
+        "label": "UK",
+        "tz": "Europe/London"
+      },
+      {
+        "label": "Gulf",
+        "tz": "Asia/Dubai"
+      },
+      {
+        "label": "Pakistan",
+        "tz": "Asia/Karachi"
+      }
     ]
   }
 }

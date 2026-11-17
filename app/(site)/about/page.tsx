@@ -1,7 +1,7 @@
 import { CtaBand, PageIntro } from "@/components/sections/blocks";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { Placeholder, Section } from "@/components/ui/primitives";
-import { about, getHub } from "@/lib/content";
+import { Section } from "@/components/ui/primitives";
+import { about } from "@/lib/content";
 import { breadcrumbLd, pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({ ...about.seo, path: "/about" });
@@ -12,7 +12,7 @@ const crumbs = [
 ];
 
 export default function AboutPage() {
-  const { hero, story, principles, remote, team } = about;
+  const { hero, story, principles, remote } = about;
   return (
     <>
       <PageIntro eyebrow={hero.eyebrow} heading={hero.heading} body={hero.body} crumbs={crumbs} />
@@ -66,28 +66,11 @@ export default function AboutPage() {
             {remote.points.map((pt) => (
               <li key={pt.title} className="border-b border-line py-5">
                 <h3 className="font-bold">{pt.title}</h3>
-                <p className={`mt-1 ${pt.detail.includes("[PLACEHOLDER") ? "font-mono text-sm text-subtle" : "text-muted"}`}>{pt.detail}</p>
+                <p className="mt-1 text-muted">{pt.detail}</p>
               </li>
             ))}
           </ul>
         </div>
-      </Section>
-
-      <Section labelledBy="team-h">
-        <h2 id="team-h" className="display text-h2">
-          {team.heading}
-        </h2>
-        <p className="mt-4 max-w-[56ch] text-lead text-muted">{team.body}</p>
-        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {team.members.map((m) => (
-            <li key={m.role}>
-              <Placeholder label="Team photo" alt={`Photo of the ${m.role}`} ratio="aspect-[4/5]" />
-              <p className="mt-4 font-mono text-sm text-subtle">[PLACEHOLDER: Team member]</p>
-              <h3 className="mt-1 font-bold">{m.role}</h3>
-              <p className="label mt-1 text-subtle">{getHub(m.hub)?.name}</p>
-            </li>
-          ))}
-        </ul>
       </Section>
 
       <CtaBand />

@@ -15,7 +15,8 @@ const crumbs = [
 ];
 
 function calendarUrl(): string | null {
-  const raw = process.env.GHL_CALENDAR_EMBED_URL;
+  // Any https scheduler embed works: Cal.com, Calendly, TidyCal or GoHighLevel. GHL_CALENDAR_EMBED_URL is still read for older setups.
+  const raw = process.env.BOOKING_EMBED_URL || process.env.GHL_CALENDAR_EMBED_URL;
   if (!raw) return null;
   try {
     const u = new URL(raw);
@@ -80,7 +81,7 @@ export default function ContactPage() {
                   className="h-[720px] w-full rounded-md border border-line bg-ink"
                 />
               ) : (
-                <Placeholder label="Booking calendar: set GHL_CALENDAR_EMBED_URL" alt="Booking calendar" ratio="aspect-[4/5]" />
+                <Placeholder label={contact.booking.fallback} alt="Booking calendar" ratio="aspect-[4/5]" />
               )}
             </div>
             <p className="mt-6 text-sm text-muted">

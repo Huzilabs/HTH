@@ -6,7 +6,7 @@
   "hero": {
     "eyebrow": "Contact",
     "heading": "Tell us what you have. We'll show you what's missing.",
-    "body": "Book a call directly, or send a short brief and we'll reply within [PLACEHOLDER: response time, e.g. one business day] with next steps."
+    "body": "Book a call directly, or send a short brief and we'll get back to you with next steps."
   },
   "form": {
     "heading": "Send a brief",
@@ -20,7 +20,7 @@
     ],
     "success": {
       "heading": "Thanks, we've got it.",
-      "body": "Your brief is in. We'll reply by email or WhatsApp within [PLACEHOLDER: response time]. If it's urgent, book a call below."
+      "body": "Your brief is in. We'll reply by email or WhatsApp with next steps. If it's urgent, book a call below."
     },
     "error": {
       "heading": "That didn't send.",
@@ -30,7 +30,7 @@
   "booking": {
     "heading": "Book a call",
     "body": "30 minutes. We look at how leads reach you today and where they go cold.",
-    "fallback": "[PLACEHOLDER: Booking calendar appears here once GHL_CALENDAR_EMBED_URL is set]"
+    "fallback": "Booking calendar: set BOOKING_EMBED_URL"
   },
   "whatsapp": {
     "heading": "Prefer WhatsApp?",
