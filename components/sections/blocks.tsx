@@ -63,15 +63,15 @@ export function CtaBand({
   const wa = whatsappHref();
   return (
     <section aria-labelledby="cta-heading" className="border-t border-line">
-      <Container className="grid gap-10 py-20 md:grid-cols-12 md:py-28">
+      <Container className="grid gap-10 py-20 text-center md:grid-cols-12 md:py-28 md:text-left">
         <div className="md:col-span-7">
           <h2 id="cta-heading" className="display reveal text-h1 text-balance">
             {heading}
           </h2>
         </div>
         <div className="md:col-span-5 md:self-end">
-          <p className="text-lead text-muted">{body}</p>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <p className="mx-auto max-w-[42ch] text-lead text-muted md:mx-0">{body}</p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3 md:justify-start">
             <ButtonLink href={site.primaryCta.href} arrow>
               {site.primaryCta.label}
             </ButtonLink>

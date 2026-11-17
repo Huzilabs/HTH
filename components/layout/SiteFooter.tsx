@@ -11,12 +11,12 @@ export function SiteFooter() {
   const wa = whatsappHref();
   return (
     <footer className="border-t border-line">
-      <Container className="grid gap-12 py-16 md:grid-cols-12">
+      <Container className="grid gap-12 py-16 text-center md:grid-cols-12 md:text-left">
         <div className="md:col-span-4">
           <Link href="/" className="inline-block rounded-sm">
             <Logo />
           </Link>
-          <p className="mt-5 max-w-[34ch] text-sm text-muted">{site.shortDescription}</p>
+          <p className="mx-auto mt-5 max-w-[34ch] text-sm text-muted md:mx-0">{site.shortDescription}</p>
           <p className="mt-6">
             <a href={mailto} className="text-h4 font-semibold text-ink underline decoration-accent decoration-2 underline-offset-[6px] hover:text-accent">
               {site.email}
@@ -80,7 +80,7 @@ export function SiteFooter() {
           </div>
         )}
       </Container>
-      <Container className="flex flex-col gap-2 border-t border-line py-6 text-sm text-subtle sm:flex-row sm:justify-between">
+      <Container className="flex flex-col gap-2 border-t border-line py-6 text-center text-sm text-subtle sm:flex-row sm:justify-between sm:text-left">
         <p>© 2024 HTH (Hub to Hub)</p>
         <p>{site.footerNote}</p>
       </Container>
