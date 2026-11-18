@@ -24,7 +24,12 @@ export default function HomePage() {
       <Container className="pb-16 pt-14 md:pb-20 md:pt-24">
         <div className="grid gap-12 md:grid-cols-12 md:items-center">
           <div className="md:col-span-7">
-            <p className="label enter text-accent">{hero.eyebrow}</p>
+            <p className="enter display text-h3 text-ink">
+              Hub to Hub <span className="text-accent">Solutions</span>
+            </p>
+            <p className="label enter mt-3 text-subtle" style={{ "--d": "60ms" } as React.CSSProperties}>
+              {hero.eyebrow}
+            </p>
             <h1 className="display enter-h1 mt-5 text-h1 text-balance">{hero.headline}</h1>
             <p className="enter mt-6 max-w-[48ch] text-lead text-muted" style={{ "--d": "120ms" } as React.CSSProperties}>
               {hero.sub}

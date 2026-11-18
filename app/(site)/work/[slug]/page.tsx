@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
   const { slug } = await params;
   const c = getCaseStudy(slug);
   if (!c) return {};
-  return pageMetadata({ title: `${c.shortTitle} case study | HTH (Hub to Hub)`, description: c.summary, path: `/work/${c.slug}` });
+  return pageMetadata({ title: `${c.shortTitle} case study | Hub to Hub Solutions`, description: c.summary, path: `/work/${c.slug}` });
 }
 
 function Shot({ s, priority = false, sizes }: { s: Screenshot; priority?: boolean; sizes: string }) {

@@ -1,6 +1,16 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
+import {
+  MARK_H_LEFT,
+  MARK_H_RIGHT,
+  MARK_LETTERS_TRANSFORM,
+  MARK_NODES,
+  MARK_ORBIT_LOWER,
+  MARK_ORBIT_UPPER,
+  MARK_T,
+  MARK_VIEWBOX,
+} from "./mark";
 
 export const ogSize = { width: 1200, height: 630 };
 export const ogContentType = "image/png";
@@ -12,6 +22,10 @@ const SUBTLE = "#9da19d";
 const LINE = "#313536";
 
 const fontDir = join(process.cwd(), "assets/fonts");
+
+/** The HTH Solutions mark (shared geometry), as an inline SVG image for next/og. */
+const markSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${MARK_VIEWBOX}"><path d="${MARK_ORBIT_UPPER}" fill="${A}"/><g transform="${MARK_LETTERS_TRANSFORM}" stroke="${G}" stroke-width="14" paint-order="stroke"><path d="${MARK_H_LEFT}" fill="${I}"/><path d="${MARK_H_RIGHT}" fill="${I}"/><path d="${MARK_T}" fill="${A}"/></g><path d="${MARK_ORBIT_LOWER}" fill="${A}" stroke="${G}" stroke-width="10" paint-order="stroke"/>${MARK_NODES.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="25" fill="${A}" stroke="${G}" stroke-width="8" paint-order="stroke"/><circle cx="${x}" cy="${y}" r="12" fill="${G}"/>`).join("")}</svg>`;
+const markDataUri = `data:image/svg+xml;base64,${Buffer.from(markSvg).toString("base64")}`;
 const fonts = Promise.all([
   readFile(join(fontDir, "archivo-latin-400-normal.woff")),
   readFile(join(fontDir, "archivo-latin-700-normal.woff")),
@@ -39,11 +53,12 @@ export async function renderOg({ eyebrow, title }: { eyebrow: string; title: str
       >
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <svg width="56" height="56" viewBox="0 0 48 48">
-              <path d="M6 12V36M15 12V36M6 24H19.5M33 12V36M42 12V36M28.5 24H42" stroke={I} strokeWidth="4" strokeLinecap="round" fill="none" />
-              <circle cx="24" cy="24" r="4" fill="none" stroke={A} strokeWidth="3" />
-            </svg>
-            <div style={{ fontSize: 30, fontWeight: 700, letterSpacing: "-0.02em" }}>Hub to Hub</div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={markDataUri} width={108} height={60} alt="" />
+            <div style={{ display: "flex", flexDirection: "column", borderLeft: `2px solid ${LINE}`, paddingLeft: 16 }}>
+              <div style={{ fontSize: 30, fontWeight: 700, letterSpacing: "0.02em", lineHeight: 1 }}>HTH</div>
+              <div style={{ fontSize: 13, color: SUBTLE, letterSpacing: "0.38em", marginTop: 6 }}>SOLUTIONS</div>
+            </div>
           </div>
           <div style={{ fontFamily: "JetBrains Mono", fontSize: 20, color: SUBTLE, textTransform: "uppercase", letterSpacing: "0.06em" }}>
             {eyebrow}

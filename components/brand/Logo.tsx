@@ -1,58 +1,70 @@
+import {
+  MARK_H_LEFT,
+  MARK_H_RIGHT,
+  MARK_LETTERS_TRANSFORM,
+  MARK_NODES,
+  MARK_ORBIT_LOWER,
+  MARK_ORBIT_UPPER,
+  MARK_T,
+  MARK_VIEWBOX,
+} from "@/lib/mark";
+
 type Props = { className?: string; title?: string };
 
-/** HTH monogram: two H's whose crossbars meet at an amber node (the "to"). */
-export function Monogram({ className, title }: Props) {
+/**
+ * HTH Solutions mark: H–T–H joined by the T's crossbar, circled by an orbit with two nodes.
+ * Letters use the ink colour, the T, orbit and nodes use the accent, and thin "ground" outlines
+ * separate the overlapping parts, so the mark follows the light/dark theme.
+ */
+export function Mark({ className, title }: Props) {
+  const gap = { stroke: "var(--color-ground)", paintOrder: "stroke" as const };
   return (
     <svg
-      viewBox="0 0 48 48"
+      viewBox={MARK_VIEWBOX}
       className={className}
       role={title ? "img" : undefined}
       aria-label={title}
       aria-hidden={title ? undefined : true}
     >
-      <g fill="none" stroke="var(--color-ink)" strokeWidth="4" strokeLinecap="round">
-        <path d="M6 12V36M15 12V36M6 24H19.5" />
-        <path d="M33 12V36M42 12V36M28.5 24H42" />
+      <path d={MARK_ORBIT_UPPER} fill="var(--color-accent)" />
+      <g transform={MARK_LETTERS_TRANSFORM} {...gap} strokeWidth="14">
+        <path d={MARK_H_LEFT} fill="var(--color-ink)" />
+        <path d={MARK_H_RIGHT} fill="var(--color-ink)" />
+        <path d={MARK_T} fill="var(--color-accent)" />
       </g>
-      <circle cx="24" cy="24" r="4" fill="none" stroke="var(--color-accent)" strokeWidth="3" />
+      <path d={MARK_ORBIT_LOWER} fill="var(--color-accent)" {...gap} strokeWidth="10" />
+      {MARK_NODES.map(([x, y]) => (
+        <g key={x}>
+          <circle cx={x} cy={y} r="25" fill="var(--color-accent)" {...gap} strokeWidth="8" />
+          <circle cx={x} cy={y} r="12" fill="var(--color-ground)" />
+        </g>
+      ))}
     </svg>
   );
 }
 
-/** "Hub to Hub" wordmark. */
-export function Wordmark({ className, title }: Props) {
+/** Lockup: mark | HTH over SOLUTIONS, as in the supplied logo. Text is real text for crispness. */
+export function Logo({
+  className = "",
+  size = "md",
+  label = "Hub to Hub Solutions home",
+}: {
+  className?: string;
+  size?: "md" | "lg";
+  label?: string;
+}) {
+  const lg = size === "lg";
   return (
-    <svg
-      viewBox="0 0 250 40"
-      className={className}
-      role={title ? "img" : undefined}
-      aria-label={title}
-      aria-hidden={title ? undefined : true}
-    >
-      <g fill="var(--color-ink)" fontWeight="700" style={{ fontFamily: "var(--font-archivo)", fontStretch: "88%" }}>
-        <text x="0" y="30" fontSize="32" textLength="62" lengthAdjust="spacingAndGlyphs">
-          Hub
-        </text>
-        <text x="188" y="30" fontSize="32" textLength="62" lengthAdjust="spacingAndGlyphs">
-          Hub
-        </text>
-      </g>
-      <path d="M72 19H107M143 19H178" stroke="var(--color-ink)" strokeWidth="2.5" strokeLinecap="round" />
-      <circle cx="125" cy="19" r="13" fill="none" stroke="var(--color-accent)" strokeWidth="2.5" />
-      <text x="125" y="23.5" textAnchor="middle" fontSize="12" fill="var(--color-accent)" style={{ fontFamily: "var(--font-jetbrains)" }}>
-        to
-      </text>
-    </svg>
-  );
-}
-
-/** Full lockup. The visible text is decorative; the accessible name comes from the label. */
-export function Logo({ className = "" }: { className?: string }) {
-  return (
-    <span className={`inline-flex items-center gap-2.5 ${className}`}>
-      <Monogram className="h-8 w-8 shrink-0" />
-      <Wordmark className="h-[1.15rem] w-auto" />
-      <span className="sr-only">HTH (Hub to Hub) home</span>
+    <span className={`inline-flex items-center ${lg ? "gap-4" : "gap-2.5"} ${className}`}>
+      <Mark className={`${lg ? "h-14" : "h-8"} w-auto shrink-0`} />
+      <span aria-hidden="true" className={`w-px self-stretch bg-line-strong ${lg ? "my-1" : "my-1.5"}`} />
+      <span aria-hidden="true" className="flex flex-col leading-none">
+        <span className={`font-extrabold tracking-[0.02em] text-ink ${lg ? "text-[2rem]" : "text-[1.15rem]"}`}>HTH</span>
+        <span className={`font-medium uppercase text-subtle ${lg ? "mt-1.5 text-[0.8rem] tracking-[0.42em]" : "mt-1 text-[0.55rem] tracking-[0.34em]"}`}>
+          Solutions
+        </span>
+      </span>
+      <span className="sr-only">{label}</span>
     </span>
   );
 }

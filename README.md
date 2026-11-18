@@ -144,6 +144,7 @@ Brand direction **B, "Network"** (compare all three at `/brand`). Tokens live in
 - **Colour:** `ground` #0F1315, `ink` #E6EAE3, `accent` #E3B34A, plus fixed mixes of those (`muted`, `subtle`, `line`, `line-strong`, `raised`). Tailwind's default palette is switched off, so only these colour classes exist.
 - **Type:** Archivo (semi-condensed for headlines via the `display` utility) and JetBrains Mono (the `label` utility).
 - **Contrast:** ink 15.3:1, muted 9.6:1, subtle 7.1:1, accent 9.6:1 on ground. Every text pair passes WCAG AA.
+- **Logo:** the HTH Solutions mark (H–T–H with the orbit) is rebuilt in vector from the supplied logo. Its geometry lives in `lib/mark.ts` and is used by the header and footer lockup (`components/brand/Logo.tsx`), the favicon (`app/icon.svg`, `public/icon.svg`), the Apple icon and the Open Graph images. Letters use the ink colour; the T, orbit and nodes use the accent, so it follows the theme.
 - **Light and dark:** dark is the default. The header toggle switches to the light "Paper" palette (`[data-theme="light"]` in `tokens.css`); the choice is saved in `localStorage`, and first-time visitors get their OS preference. Light contrast: ink 16.9:1, muted 8.4:1, subtle 5.9:1, accent 5.2:1.
 - **Motion:** CSS only, no animation library. Hero entrance, the route map drawing in with a "lead" travelling it, scroll reveals (`.reveal`), the tools marquee and card lift. Everything is off for reduced-motion users, and scroll reveals only run in browsers that support scroll-driven animations.
 
